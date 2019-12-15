@@ -34,7 +34,7 @@ platform :ios do
        increment_build
           gym(
              scheme: "com.mobilepowered.LOFOTunisia",
-             output_directory: ~/Desktop,
+             output_directory: ~/Desktop/,
              output_name: "LOFOTunisia",
              export_method: “ad-hoc”,
              include_bitcode: false,
