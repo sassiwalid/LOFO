@@ -19,9 +19,7 @@ platform :ios do
   desc "Description of what the lane does"
   desc “Install pod dependencies”
       lane :install_pods do
-         cocoapods(
-             podfile: PODFILE_PATH,
-             use_bundle_exec: false)
+         cocoapods
   end
   desc "Incrementing Build Number"
       lane :increment_build do
@@ -35,11 +33,10 @@ platform :ios do
        install_pods
        increment_build
           gym(
-             workspace: WORKSPACE_NAME,
-             scheme: SCHEME_NAME,
-             output_directory: PATH_FOR_IPA,
-             output_name: IPA_NAME,
-             export_method: “app-store”,
+             scheme: "com.mobilepowered.LOFOTunisia",
+             output_directory: ~/Desktop,
+             output_name: "LOFOTunisia",
+             export_method: “ad-hoc”,
              include_bitcode: false,
              clean: true)
     end
