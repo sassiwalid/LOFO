@@ -30,7 +30,6 @@ platform :ios do
   end
   desc “Archive and Build IPA”
       lane :build_ipa do
-       install_pods
        increment_build
           gym(
              scheme: "com.mobilepowered.LOFOTunisia",
