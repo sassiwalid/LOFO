@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>primary</key>
+	<string>FFFFFF</string>
+	<key>facebook</key>
+	<string>3E5082</string>
+	<key>email</key>
+	<string>7A8FA6</string>
+	<key>redButtonLofo</key>
+	<string>DE1E23</string>
+	<key>redTextLofo</key>
+	<string>F44336</string>
+</dict>
+</plist>

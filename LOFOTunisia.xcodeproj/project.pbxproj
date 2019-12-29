@@ -13,6 +13,16 @@
 		A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */; };
 		A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */; };
 		A9A5D02723B8960A00AF9ECF /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */; };
+		A9A5D02A23B8A24200AF9ECF /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02923B8A24200AF9ECF /* CoordinatorProtocol.swift */; };
+		A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */; };
+		A9A5D03623B8F38700AF9ECF /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D03823B8F38700AF9ECF /* localizable.strings */; };
+		A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D03B23B8F86A00AF9ECF /* UIColorExtension.swift */; };
+		A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D03D23B8F88400AF9ECF /* UIViewControllerExtension.swift */; };
+		A9A5D04123B8FC0800AF9ECF /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D04023B8FC0800AF9ECF /* colors.plist */; };
+		A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */; };
+		A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */; };
+		A9A5D04723B926F300AF9ECF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04623B926F300AF9ECF /* User.swift */; };
+		A9A5D04A23B928E500AF9ECF /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */; };
 		A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C723A5577B00CA39DE /* AppDelegate.swift */; };
 		A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C923A5577B00CA39DE /* SceneDelegate.swift */; };
 		A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D023A5577F00CA39DE /* Assets.xcassets */; };
@@ -52,6 +62,19 @@
 		A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		A9A5D02923B8A24200AF9ECF /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A9A5D03323B8EF9C00AF9ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A9A5D03723B8F38700AF9ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizable.strings; sourceTree = "<group>"; };
+		A9A5D03923B8F3A400AF9ECF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A9A5D03A23B8F3A400AF9ECF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/localizable.strings; sourceTree = "<group>"; };
+		A9A5D03B23B8F86A00AF9ECF /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A9A5D03D23B8F88400AF9ECF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		A9A5D04023B8FC0800AF9ECF /* colors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIService.swift; sourceTree = "<group>"; };
+		A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		A9A5D04623B926F300AF9ECF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
 		A9D282C423A5577B00CA39DE /* LOFOTunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOFOTunisia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282C723A5577B00CA39DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D282C923A5577B00CA39DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +134,9 @@
 		A95FA31523B2A0FC00A2D2FD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D03F23B8F8A100AF9ECF /* Models */,
+				A9A5D02D23B8A35100AF9ECF /* Managers */,
+				A9A5D02823B8A21400AF9ECF /* Coordinators */,
 				A9A5D02123B894FB00AF9ECF /* Protocols */,
 				A9A5D01A23B8930300AF9ECF /* Authentification */,
 			);
@@ -137,6 +163,7 @@
 		A9A5D01523B8925C00AF9ECF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D02E23B8A36D00AF9ECF /* Helpers */,
 				A9A5D01923B892F000AF9ECF /* Extensions */,
 			);
 			path = Utilities;
@@ -145,11 +172,13 @@
 		A9A5D01623B8927400AF9ECF /* Commons Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D02F23B8EE2F00AF9ECF /* Localizations */,
 				A9D282C923A5577B00CA39DE /* SceneDelegate.swift */,
 				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
 				A9D282D523A5577F00CA39DE /* Info.plist */,
 				A9D282D023A5577F00CA39DE /* Assets.xcassets */,
 				A9A5D01723B892D700AF9ECF /* Constants.swift */,
+				A9A5D04023B8FC0800AF9ECF /* colors.plist */,
 			);
 			path = "Commons Files";
 			sourceTree = "<group>";
@@ -157,6 +186,8 @@
 		A9A5D01923B892F000AF9ECF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D03B23B8F86A00AF9ECF /* UIColorExtension.swift */,
+				A9A5D03D23B8F88400AF9ECF /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,8 +229,57 @@
 		A9A5D02123B894FB00AF9ECF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D02923B8A24200AF9ECF /* CoordinatorProtocol.swift */,
+				A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A9A5D02823B8A21400AF9ECF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A9A5D02D23B8A35100AF9ECF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A9A5D02E23B8A36D00AF9ECF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A9A5D02F23B8EE2F00AF9ECF /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D03823B8F38700AF9ECF /* localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		A9A5D03F23B8F8A100AF9ECF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D04623B926F300AF9ECF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9A5D04823B928A200AF9ECF /* AuthentificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */,
+			);
+			path = AuthentificationTests;
 			sourceTree = "<group>";
 		};
 		A9D282BB23A5577B00CA39DE = {
@@ -237,6 +317,7 @@
 		A9D282DD23A5577F00CA39DE /* LOFOTunisiaTests */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D04823B928A200AF9ECF /* AuthentificationTests */,
 				A9D282DE23A5577F00CA39DE /* LOFOTunisiaTests.swift */,
 				A9D282E023A5577F00CA39DE /* Info.plist */,
 			);
@@ -354,6 +435,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = A9D282BB23A5577B00CA39DE;
 			productRefGroup = A9D282C523A5577B00CA39DE /* Products */;
@@ -373,6 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */,
+				A9A5D03623B8F38700AF9ECF /* localizable.strings in Resources */,
+				A9A5D04123B8FC0800AF9ECF /* colors.plist in Resources */,
 				A9A5D02723B8960A00AF9ECF /* SignInViewController.xib in Resources */,
 				A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */,
 			);
@@ -521,9 +605,16 @@
 			files = (
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
+				A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */,
+				A9A5D02A23B8A24200AF9ECF /* CoordinatorProtocol.swift in Sources */,
+				A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */,
 				A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */,
 				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
+				A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */,
+				A9A5D04723B926F300AF9ECF /* User.swift in Sources */,
 				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
+				A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */,
+				A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A5D04A23B928E500AF9ECF /* SignInViewModelTests.swift in Sources */,
 				A9D282DF23A5577F00CA39DE /* LOFOTunisiaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,10 +651,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A9A5D03823B8F38700AF9ECF /* localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A5D03723B8F38700AF9ECF /* en */,
+				A9A5D03A23B8F3A400AF9ECF /* fr */,
+			);
+			name = localizable.strings;
+			sourceTree = "<group>";
+		};
 		A9D282D223A5577F00CA39DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A9D282D323A5577F00CA39DE /* Base */,
+				A9A5D03323B8EF9C00AF9ECF /* en */,
+				A9A5D03923B8F3A400AF9ECF /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -574,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -634,6 +738,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -691,7 +796,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6N447KN77;
-				INFOPLIST_FILE = LOFOTunisia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Commons Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,7 +804,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -710,7 +815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6N447KN77;
-				INFOPLIST_FILE = LOFOTunisia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Commons Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -718,7 +823,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -730,7 +835,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6N447KN77;
-				INFOPLIST_FILE = LOFOTunisiaTests/Info.plist;
+				INFOPLIST_FILE = "LOFOTunisia/Configurations/Commons Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -740,7 +845,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisiaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOFOTunisia.app/LOFOTunisia";
 			};
 			name = Debug;
@@ -753,7 +858,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6N447KN77;
-				INFOPLIST_FILE = LOFOTunisiaTests/Info.plist;
+				INFOPLIST_FILE = "LOFOTunisia/Configurations/Commons Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -763,7 +868,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisiaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOFOTunisia.app/LOFOTunisia";
 			};
 			name = Release;
