@@ -1,0 +1,6 @@
+framework module Pods_LOFOTunisia_LOFOTunisiaUITests {
+  umbrella header "Pods-LOFOTunisia-LOFOTunisiaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

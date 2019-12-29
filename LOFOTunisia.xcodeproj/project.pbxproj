@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */; };
+		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
+		A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01723B892D700AF9ECF /* Constants.swift */; };
+		A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */; };
+		A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */; };
+		A9A5D02723B8960A00AF9ECF /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */; };
 		A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C723A5577B00CA39DE /* AppDelegate.swift */; };
 		A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C923A5577B00CA39DE /* SceneDelegate.swift */; };
-		A9D282CC23A5577B00CA39DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282CB23A5577B00CA39DE /* ViewController.swift */; };
-		A9D282CF23A5577B00CA39DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D282CD23A5577B00CA39DE /* Main.storyboard */; };
 		A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D023A5577F00CA39DE /* Assets.xcassets */; };
 		A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D223A5577F00CA39DE /* LaunchScreen.storyboard */; };
 		A9D282DF23A5577F00CA39DE /* LOFOTunisiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282DE23A5577F00CA39DE /* LOFOTunisiaTests.swift */; };
 		A9D282EA23A5577F00CA39DE /* LOFOTunisiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282E923A5577F00CA39DE /* LOFOTunisiaUITests.swift */; };
+		D8E99724C52B84278910C8CA /* Pods_LOFOTunisiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CCDEA2B674D13BCD7FEA0BD /* Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisia_LOFOTunisiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4F31DD7EB3AA30BC734360 /* Pods-LOFOTunisia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.release.xcconfig"; sourceTree = "<group>"; };
+		350AC209F5FA98DA1675BA4F /* Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
+		82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9A5D01723B892D700AF9ECF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		A9D282C423A5577B00CA39DE /* LOFOTunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOFOTunisia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282C723A5577B00CA39DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D282C923A5577B00CA39DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9D282CB23A5577B00CA39DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9D282CE23A5577B00CA39DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9D282D023A5577F00CA39DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D282D323A5577F00CA39DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9D282D523A5577F00CA39DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,7 @@
 		A9D282E523A5577F00CA39DE /* LOFOTunisiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOFOTunisiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282E923A5577F00CA39DE /* LOFOTunisiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTunisiaUITests.swift; sourceTree = "<group>"; };
 		A9D282EB23A5577F00CA39DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EED58DE990711097EE1BFB /* Pods-LOFOTunisiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E99724C52B84278910C8CA /* Pods_LOFOTunisiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,120 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9805D7B9DFDC1CD70207F429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */,
+				2F4F31DD7EB3AA30BC734360 /* Pods-LOFOTunisia.release.xcconfig */,
+				350AC209F5FA98DA1675BA4F /* Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig */,
+				1CCDEA2B674D13BCD7FEA0BD /* Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig */,
+				A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */,
+				E8EED58DE990711097EE1BFB /* Pods-LOFOTunisiaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A95FA31523B2A0FC00A2D2FD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D02123B894FB00AF9ECF /* Protocols */,
+				A9A5D01A23B8930300AF9ECF /* Authentification */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A95FA31623B2A10600A2D2FD /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D01623B8927400AF9ECF /* Commons Files */,
+				A9A5D01523B8925C00AF9ECF /* Utilities */,
+				A9A5D01423B8924900AF9ECF /* Librairies */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A9A5D01423B8924900AF9ECF /* Librairies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Librairies;
+			sourceTree = "<group>";
+		};
+		A9A5D01523B8925C00AF9ECF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D01923B892F000AF9ECF /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A9A5D01623B8927400AF9ECF /* Commons Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9D282C923A5577B00CA39DE /* SceneDelegate.swift */,
+				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
+				A9D282D523A5577F00CA39DE /* Info.plist */,
+				A9D282D023A5577F00CA39DE /* Assets.xcassets */,
+				A9A5D01723B892D700AF9ECF /* Constants.swift */,
+			);
+			path = "Commons Files";
+			sourceTree = "<group>";
+		};
+		A9A5D01923B892F000AF9ECF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9A5D01A23B8930300AF9ECF /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D01C23B8932100AF9ECF /* SignUp */,
+				A9A5D01B23B8931500AF9ECF /* SignIn */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		A9A5D01B23B8931500AF9ECF /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D01D23B8947D00AF9ECF /* Views */,
+				A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A9A5D01C23B8932100AF9ECF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A9A5D01D23B8947D00AF9ECF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */,
+				A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9A5D02123B894FB00AF9ECF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		A9D282BB23A5577B00CA39DE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +209,8 @@
 				A9D282DD23A5577F00CA39DE /* LOFOTunisiaTests */,
 				A9D282E823A5577F00CA39DE /* LOFOTunisiaUITests */,
 				A9D282C523A5577B00CA39DE /* Products */,
+				9805D7B9DFDC1CD70207F429 /* Pods */,
+				B5332DD60DBDE8D749222CAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +227,9 @@
 		A9D282C623A5577B00CA39DE /* LOFOTunisia */ = {
 			isa = PBXGroup;
 			children = (
-				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
-				A9D282C923A5577B00CA39DE /* SceneDelegate.swift */,
-				A9D282CB23A5577B00CA39DE /* ViewController.swift */,
-				A9D282CD23A5577B00CA39DE /* Main.storyboard */,
-				A9D282D023A5577F00CA39DE /* Assets.xcassets */,
+				A95FA31623B2A10600A2D2FD /* Configurations */,
+				A95FA31523B2A0FC00A2D2FD /* Modules */,
 				A9D282D223A5577F00CA39DE /* LaunchScreen.storyboard */,
-				A9D282D523A5577F00CA39DE /* Info.plist */,
 			);
 			path = LOFOTunisia;
 			sourceTree = "<group>";
@@ -128,6 +252,16 @@
 			path = LOFOTunisiaUITests;
 			sourceTree = "<group>";
 		};
+		B5332DD60DBDE8D749222CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */,
+				2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */,
+				82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9D282EE23A5577F00CA39DE /* Build configuration list for PBXNativeTarget "LOFOTunisia" */;
 			buildPhases = (
+				4A8C1D313410A1E94BE08D74 /* [CP] Check Pods Manifest.lock */,
 				A9D282C023A5577B00CA39DE /* Sources */,
 				A9D282C123A5577B00CA39DE /* Frameworks */,
 				A9D282C223A5577B00CA39DE /* Resources */,
+				425B128D3FE389BA59662018 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9D282F123A5577F00CA39DE /* Build configuration list for PBXNativeTarget "LOFOTunisiaTests" */;
 			buildPhases = (
+				FA5D89AC4BC085B9027A0A00 /* [CP] Check Pods Manifest.lock */,
 				A9D282D623A5577F00CA39DE /* Sources */,
 				A9D282D723A5577F00CA39DE /* Frameworks */,
 				A9D282D823A5577F00CA39DE /* Resources */,
+				2FB7CB02478C217ECF1B33E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9D282F423A5577F00CA39DE /* Build configuration list for PBXNativeTarget "LOFOTunisiaUITests" */;
 			buildPhases = (
+				043A5B6239D10E1B2034536C /* [CP] Check Pods Manifest.lock */,
 				A9D282E123A5577F00CA39DE /* Sources */,
 				A9D282E223A5577F00CA39DE /* Frameworks */,
 				A9D282E323A5577F00CA39DE /* Resources */,
+				D57D7ED03CDCB3D0FAA92B79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */,
+				A9A5D02723B8960A00AF9ECF /* SignInViewController.xib in Resources */,
 				A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */,
-				A9D282CF23A5577B00CA39DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +394,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		043A5B6239D10E1B2034536C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LOFOTunisia-LOFOTunisiaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FB7CB02478C217ECF1B33E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		425B128D3FE389BA59662018 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8C1D313410A1E94BE08D74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LOFOTunisia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57D7ED03CDCB3D0FAA92B79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA5D89AC4BC085B9027A0A00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LOFOTunisiaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9D282C023A5577B00CA39DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D282CC23A5577B00CA39DE /* ViewController.swift in Sources */,
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
+				A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */,
+				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
+				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +559,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A9D282CD23A5577B00CA39DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9D282CE23A5577B00CA39DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9D282D223A5577F00CA39DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +686,7 @@
 		};
 		A9D282EF23A5577F00CA39DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +705,7 @@
 		};
 		A9D282F023A5577F00CA39DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4F31DD7EB3AA30BC734360 /* Pods-LOFOTunisia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +724,7 @@
 		};
 		A9D282F223A5577F00CA39DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +747,7 @@
 		};
 		A9D282F323A5577F00CA39DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EED58DE990711097EE1BFB /* Pods-LOFOTunisiaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +770,7 @@
 		};
 		A9D282F523A5577F00CA39DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 350AC209F5FA98DA1675BA4F /* Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +791,7 @@
 		};
 		A9D282F623A5577F00CA39DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCDEA2B674D13BCD7FEA0BD /* Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
