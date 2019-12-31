@@ -9,6 +9,5 @@
 import Foundation
 
 protocol LoginAPIServiceProtocol {
-    func Connect()
-    func signInDidFail()
+    func Connect(login:String,password:String,onCompletion:((Bool,User)->Void))
 }

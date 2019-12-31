@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+
+class LoginAPIService:LoginAPIServiceProtocol{
+    var urlSession:URLSession?
+        
+    init(urlSession:URLSession) {
+        self.urlSession = urlSession
+    }
+    func Connect(login:String,password:String,onCompletion:((Bool,User)->Void)){
+        
+    }
+    
+}

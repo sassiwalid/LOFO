@@ -23,6 +23,10 @@
 		A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */; };
 		A9A5D04723B926F300AF9ECF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04623B926F300AF9ECF /* User.swift */; };
 		A9A5D04A23B928E500AF9ECF /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */; };
+		A9A5D04C23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04B23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift */; };
+		A9A5D04F23BB9BAA00AF9ECF /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04E23BB9BAA00AF9ECF /* FakeResponseData.swift */; };
+		A9A5D05223BB9DCF00AF9ECF /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D05123BB9DCF00AF9ECF /* user.json */; };
+		A9A5D05423BBA37F00AF9ECF /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D05323BBA37F00AF9ECF /* URLSessionFake.swift */; };
 		A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C723A5577B00CA39DE /* AppDelegate.swift */; };
 		A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C923A5577B00CA39DE /* SceneDelegate.swift */; };
 		A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D023A5577F00CA39DE /* Assets.xcassets */; };
@@ -75,6 +79,10 @@
 		A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIServiceProtocol.swift; sourceTree = "<group>"; };
 		A9A5D04623B926F300AF9ECF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
+		A9A5D04B23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIServiceTests.swift; sourceTree = "<group>"; };
+		A9A5D04E23BB9BAA00AF9ECF /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		A9A5D05123BB9DCF00AF9ECF /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		A9A5D05323BBA37F00AF9ECF /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		A9D282C423A5577B00CA39DE /* LOFOTunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOFOTunisia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282C723A5577B00CA39DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D282C923A5577B00CA39DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -277,9 +285,29 @@
 		A9A5D04823B928A200AF9ECF /* AuthentificationTests */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D05023BB9D7200AF9ECF /* FakeJsonFiles */,
+				A9A5D04D23BB9B9100AF9ECF /* Fakes */,
 				A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */,
+				A9A5D04B23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift */,
 			);
 			path = AuthentificationTests;
+			sourceTree = "<group>";
+		};
+		A9A5D04D23BB9B9100AF9ECF /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D04E23BB9BAA00AF9ECF /* FakeResponseData.swift */,
+				A9A5D05323BBA37F00AF9ECF /* URLSessionFake.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		A9A5D05023BB9D7200AF9ECF /* FakeJsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D05123BB9DCF00AF9ECF /* user.json */,
+			);
+			path = FakeJsonFiles;
 			sourceTree = "<group>";
 		};
 		A9D282BB23A5577B00CA39DE = {
@@ -466,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A5D05223BB9DCF00AF9ECF /* user.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +651,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A5D04C23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift in Sources */,
+				A9A5D04F23BB9BAA00AF9ECF /* FakeResponseData.swift in Sources */,
+				A9A5D05423BBA37F00AF9ECF /* URLSessionFake.swift in Sources */,
 				A9A5D04A23B928E500AF9ECF /* SignInViewModelTests.swift in Sources */,
 				A9D282DF23A5577F00CA39DE /* LOFOTunisiaTests.swift in Sources */,
 			);

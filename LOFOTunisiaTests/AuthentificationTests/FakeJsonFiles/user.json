@@ -1,0 +1,9 @@
+{
+    "id" : 1,
+    "name" : "Walid",
+    "subName":"SASSI",
+    "city":"Menzel Jemil",
+    "Age":36,
+    "email":"sassi.walid@gmail.com",
+    "password": "1234"
+}
