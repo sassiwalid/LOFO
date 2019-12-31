@@ -17,6 +17,8 @@ class LoginAPIService:LoginAPIServiceProtocol{
     }
     func Connect(login:String,password:String,onCompletion:((Bool,User)->Void)){
         
+        
+        
     }
     
 }
