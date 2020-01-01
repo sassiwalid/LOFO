@@ -9,5 +9,5 @@
 import Foundation
 
 protocol LoginAPIServiceProtocol {
-    func getUser(login:String, password:String, onCompletion: @escaping((Bool, User) -> Void))
+    func getUser(login:String, password:String, onCompletion: @escaping((Bool, User?) -> Void))
 }

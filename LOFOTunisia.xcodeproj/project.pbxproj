@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */; };
 		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
+		A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */; };
 		A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01723B892D700AF9ECF /* Constants.swift */; };
 		A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */; };
 		A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */; };
@@ -62,6 +63,7 @@
 		40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
 		82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A9A5D01723B892D700AF9ECF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 		A9A5D02E23B8A36D00AF9ECF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */,
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
 				A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */,
