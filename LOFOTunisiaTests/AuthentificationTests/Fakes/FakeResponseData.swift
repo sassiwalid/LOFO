@@ -20,7 +20,7 @@ class FakeResponseData{
         // get the bundle test
         let bundle = Bundle(for: FakeResponseData.self)
         let url = bundle.url(forResource: "user", withExtension: "json")
-        let data = try! Data(contentsOf: url!)
+        let data = (try? Data(contentsOf: url!)) ?? Data()
         return data
     }
     // fake incorrect user data

@@ -8,8 +8,7 @@
 
 import Foundation
 
-
-class User:NSObject{
+class User:NSObject {
     var name:String?
     var subName:String?
     var city:String?

@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 import RxSwift
-class APPCoordinator:CoordinatorProtocol{
+class APPCoordinator:CoordinatorProtocol {
     var navigationController = UINavigationController()
-    var window:UIWindow?
+    var window : UIWindow?
     init(window:UIWindow) {
         self.window = window
     }
@@ -21,12 +21,8 @@ class APPCoordinator:CoordinatorProtocol{
         self.window?.makeKeyAndVisible()
         self.showSignIn()
     }
-    
-    func showSignIn(){
+    func showSignIn() {
         let signVC = SignInViewController(nibName: "SignInViewController", bundle: nil)
         self.navigationController.viewControllers = [signVC]
     }
-    
-    
-    
 }

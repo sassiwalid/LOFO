@@ -9,19 +9,14 @@
 import XCTest
 @testable import LOFOTunisia
 class LoginAPIServiceTests: XCTestCase {
-      
-    
-    func testReturnErrorWhereLoginFailed(){
+    func testReturnErrorWhereLoginFailed() {
         //given
         let sut = LoginAPIService(urlSession: URLSessionFake(data: nil, urlResponse: nil, error: FakeResponseData().error))
-        
         //when
-        sut.Connect(login: "", password: "") { (success, result) in
+        sut.getUser(login: "", password: "") { (success, result) in
         //then
             XCTAssertFalse(success)
             XCTAssertNil(result)
         }
-        
-       
     }
 }
