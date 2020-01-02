@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+protocol SignInViewModel {
+    // Email and Password
+    var email: String {get set}
+    var password: String {get set}
+    // Submit
+    var canSubmit: Bool { get }
+    func submit()
+    // Errors
+    var errorMessage: String { get }
+}

@@ -8,9 +8,13 @@
 	<string>3E5082</string>
 	<key>email</key>
 	<string>7A8FA6</string>
+	<key>password</key>
+	<string>7A8FA6</string>
 	<key>redButtonLofo</key>
 	<string>DE1E23</string>
 	<key>redTextLofo</key>
 	<string>F44336</string>
+	<key>gmailbuttonBorder</key>
+	<string>E2E6EA</string>
 </dict>
 </plist>

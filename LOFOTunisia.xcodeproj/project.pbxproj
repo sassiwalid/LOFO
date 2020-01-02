@@ -34,6 +34,8 @@
 		A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D223A5577F00CA39DE /* LaunchScreen.storyboard */; };
 		A9D282DF23A5577F00CA39DE /* LOFOTunisiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282DE23A5577F00CA39DE /* LOFOTunisiaTests.swift */; };
 		A9D282EA23A5577F00CA39DE /* LOFOTunisiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282E923A5577F00CA39DE /* LOFOTunisiaUITests.swift */; };
+		A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */; };
+		A9E7D6FD23BE2585000BAB03 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */; };
 		D8E99724C52B84278910C8CA /* Pods_LOFOTunisiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		A9D282E523A5577F00CA39DE /* LOFOTunisiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOFOTunisiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282E923A5577F00CA39DE /* LOFOTunisiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTunisiaUITests.swift; sourceTree = "<group>"; };
 		A9D282EB23A5577F00CA39DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E8EED58DE990711097EE1BFB /* Pods-LOFOTunisiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +227,8 @@
 		A9A5D01C23B8932100AF9ECF /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */,
+				A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -490,6 +496,7 @@
 				A9A5D03623B8F38700AF9ECF /* localizable.strings in Resources */,
 				A9A5D04123B8FC0800AF9ECF /* colors.plist in Resources */,
 				A9A5D02723B8960A00AF9ECF /* SignInViewController.xib in Resources */,
+				A9E7D6FD23BE2585000BAB03 /* SignUpViewController.xib in Resources */,
 				A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +669,7 @@
 				A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */,
 				A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */,
 				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
+				A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */,
 				A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */,
 				A9A5D04723B926F300AF9ECF /* User.swift in Sources */,
 				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
