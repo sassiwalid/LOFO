@@ -7,14 +7,32 @@
 //
 
 import Foundation
-
-protocol SignInViewModel {
+import RxSwift
+import RxCocoa
+class SignInViewModel {
+    // MARK: - Variables
+    private let authentification : LoginAPIServiceProtocol?
     // Email and Password
-    var email: String {get set}
-    var password: String {get set}
+    var email =  BehaviorRelay(value: "")
+    var password = BehaviorRelay(value: "")
     // Submit
-    var canSubmit: Bool { get }
-    func submit()
-    // Errors
-    var errorMessage: String { get }
+    var canSubmit = BehaviorRelay(value: false)
+    // Events
+    var didSignIn = BehaviorRelay(value: false)
+    var didFailSignIn = BehaviorRelay(value: false)
+    init (authentification:LoginAPIServiceProtocol) {
+        self.authentification = authentification
+    }
+    // MARK: - Check Sign In
+    /// Check user signIn
+    func submit() {
+        authentification?.getUser(login: email.value
+            ,password: password.value,onCompletion: { (success, user) in
+                if success == true {
+                    self.didSignIn.accept(true)
+                } else {
+                    self.didFailSignIn.accept(true)
+                }
+        })
+    }
 }

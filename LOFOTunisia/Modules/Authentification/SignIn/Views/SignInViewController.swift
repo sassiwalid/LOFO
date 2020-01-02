@@ -26,10 +26,25 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         initCallBacks()
         setupColors()
+        setupBinding()
         initGestureRecognizer()
         // Do any additional setup after loading the view.
     }
     // MARK: - Setup Methods
+    /// setup data binding to the viewModel
+    func setupBinding() {
+        emailTextField.rx.text.orEmpty
+            .bind(to: viewModel!.email)
+        .disposed(by: disposeBag)
+        passwordTextField.rx.text.orEmpty
+            .bind(to: viewModel!.password)
+        .disposed(by: disposeBag)
+        signInButton.rx.tap
+        .bind { [weak self] in
+            self?.viewModel?.submit()
+        }.disposed(by: disposeBag)
+    }
+    /// handle Keyboard resign
     func initCallBacks() {
         emailTextField.rx.controlEvent([.editingDidEndOnExit])
         .subscribe { _ in
@@ -59,8 +74,7 @@ class SignInViewController: UIViewController {
     // MARK: - IBActions
     @objc func openSignUpVc() {
     }
-    @IBAction func signInButtonClicked(_ sender: Any) {
-    }
+
     @IBAction func signInWithFbButtonClicked(_ sender: Any) {
     }
     @IBAction func signInWithGmailButtonClicked(_ sender: Any) {

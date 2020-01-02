@@ -8,7 +8,10 @@
 
 import Foundation
 import UIKit
-protocol CoordinatorProtocol {
+protocol CoordinatorProtocol:AnyObject {
     var navigationController: UINavigationController { get set }
+    var parentCoordinator:CoordinatorProtocol?{ get set }
     func start()
+    func start(coordinator: CoordinatorProtocol)
+    func didFinish(coordinator: CoordinatorProtocol)
 }

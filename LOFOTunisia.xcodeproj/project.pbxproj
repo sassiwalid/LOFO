@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */; };
 		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
+		A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943BE5B23BE788B007721CA /* BaseCoordinator.swift */; };
+		A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */; };
 		A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */; };
 		A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01723B892D700AF9ECF /* Constants.swift */; };
 		A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */; };
@@ -65,6 +67,8 @@
 		40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
 		82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A943BE5B23BE788B007721CA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A9A5D01723B892D700AF9ECF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */,
+				A943BE5B23BE788B007721CA /* BaseCoordinator.swift */,
+				A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -671,9 +677,11 @@
 				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
 				A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */,
 				A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */,
+				A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */,
 				A9A5D04723B926F300AF9ECF /* User.swift in Sources */,
 				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
 				A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */,
+				A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */,
 				A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

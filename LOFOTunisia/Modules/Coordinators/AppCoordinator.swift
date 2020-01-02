@@ -9,20 +9,18 @@
 import Foundation
 import UIKit
 import RxSwift
-class APPCoordinator:CoordinatorProtocol {
-    var navigationController = UINavigationController()
+class APPCoordinator:BaseCoordinator{
     var window : UIWindow?
     init(window:UIWindow) {
         self.window = window
     }
-    func start() {
+    override func start() {
         self.navigationController.navigationBar.isHidden = true
         self.window?.rootViewController = self.navigationController
         self.window?.makeKeyAndVisible()
-        self.showSignIn()
-    }
-    func showSignIn() {
-        let signVC = SignInViewController(nibName: "SignInViewController", bundle: nil)
-        self.navigationController.viewControllers = [signVC]
+        // start Sign Coordinator
+        let coordinator = SignInCoordinator()
+        coordinator.navigationController = self.navigationController
+        self.start(coordinator: coordinator)
     }
 }

@@ -1,0 +1,32 @@
+//
+//  SignInCoordinator.swift
+//  LOFOTunisia
+//
+//  Created by walid sassi on 1/2/20.
+//  Copyright © 2020 walid sassi. All rights reserved.
+//
+
+import Foundation
+import UIKit
+import RxCocoa
+import RxSwift
+
+class SignInCoordinator: BaseCoordinator {
+    private let disposeBag = DisposeBag()
+    override func start() {
+        let signInVC = SignInViewController(nibName: "SignInViewController", bundle: nil)
+        let viewModel = SignInViewModel(authentification: LoginAPIService(urlSession: URLSession()))
+        signInVC.viewModel = viewModel
+        // Coordinator subscribes to events and notifies parentCoordinator
+        viewModel.didSignIn
+        .bind(onNext: { (change) in
+            if change == true {
+                self.navigationController.viewControllers = []
+                self.parentCoordinator?.didFinish(coordinator: self)
+            }
+        })
+        .disposed(by: self.disposeBag)
+        // else it should open the signIn VC
+        self.navigationController.pushViewController(signInVC, animated: false)
+    }
+}

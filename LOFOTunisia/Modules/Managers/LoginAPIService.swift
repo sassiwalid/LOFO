@@ -23,8 +23,7 @@ class LoginAPIService:LoginAPIServiceProtocol {
         let userUrl = URL(string:"\(Constantes.baseURL)\(Constantes.usersRoutes)")
         var request = URLRequest(url: userUrl!)
         request.httpMethod = "GET"
+        onCompletion(true,User())
         //
-        
-        
     }
 }
