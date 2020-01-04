@@ -1,5 +1,5 @@
 //
-//  APIServiceProtocol.swift
+//  AuthAPIServiceProtocol.swift
 //  LOFOTunisia
 //
 //  Created by walid sassi on 12/29/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoginAPIServiceProtocol {
+protocol AuthAPIService {
     func getUser(login:String, password:String, onCompletion: @escaping((Bool, User?) -> Void))
 }

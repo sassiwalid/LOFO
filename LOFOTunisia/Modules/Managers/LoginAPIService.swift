@@ -9,7 +9,7 @@
 import Foundation
 
 /// LoginAPIService:
-class LoginAPIService:LoginAPIServiceProtocol {
+class LoginAPIService:AuthAPIService {
     var urlSession : URLSession?
     init(urlSession:URLSession) {
         self.urlSession = urlSession
@@ -23,7 +23,7 @@ class LoginAPIService:LoginAPIServiceProtocol {
         let userUrl = URL(string:"\(Constantes.baseURL)\(Constantes.usersRoutes)")
         var request = URLRequest(url: userUrl!)
         request.httpMethod = "GET"
-        onCompletion(true,User())
+        onCompletion(true, User())
         //
     }
 }

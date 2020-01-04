@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */; };
 		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
+		A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D223C08DB700236786 /* SignUpViewModel.swift */; };
+		A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D423C0F20100236786 /* EllipseView.swift */; };
 		A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943BE5B23BE788B007721CA /* BaseCoordinator.swift */; };
 		A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */; };
 		A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */; };
@@ -16,14 +18,14 @@
 		A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */; };
 		A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */; };
 		A9A5D02723B8960A00AF9ECF /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */; };
-		A9A5D02A23B8A24200AF9ECF /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02923B8A24200AF9ECF /* CoordinatorProtocol.swift */; };
+		A9A5D02A23B8A24200AF9ECF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02923B8A24200AF9ECF /* Coordinator.swift */; };
 		A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */; };
 		A9A5D03623B8F38700AF9ECF /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D03823B8F38700AF9ECF /* localizable.strings */; };
 		A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D03B23B8F86A00AF9ECF /* UIColorExtension.swift */; };
 		A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D03D23B8F88400AF9ECF /* UIViewControllerExtension.swift */; };
 		A9A5D04123B8FC0800AF9ECF /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D04023B8FC0800AF9ECF /* colors.plist */; };
 		A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */; };
-		A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */; };
+		A9A5D04523B91C0400AF9ECF /* AuthAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04423B91C0400AF9ECF /* AuthAPIService.swift */; };
 		A9A5D04723B926F300AF9ECF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04623B926F300AF9ECF /* User.swift */; };
 		A9A5D04A23B928E500AF9ECF /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */; };
 		A9A5D04C23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04B23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift */; };
@@ -36,6 +38,7 @@
 		A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D223A5577F00CA39DE /* LaunchScreen.storyboard */; };
 		A9D282DF23A5577F00CA39DE /* LOFOTunisiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282DE23A5577F00CA39DE /* LOFOTunisiaTests.swift */; };
 		A9D282EA23A5577F00CA39DE /* LOFOTunisiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282E923A5577F00CA39DE /* LOFOTunisiaUITests.swift */; };
+		A9E2526E23C11417004AA896 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E2526D23C11417004AA896 /* SignUpCoordinator.swift */; };
 		A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */; };
 		A9E7D6FD23BE2585000BAB03 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */; };
 		D8E99724C52B84278910C8CA /* Pods_LOFOTunisiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */; };
@@ -67,6 +70,8 @@
 		40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
 		82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A91DA0D223C08DB700236786 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		A91DA0D423C0F20100236786 /* EllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
 		A943BE5B23BE788B007721CA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -74,7 +79,7 @@
 		A9A5D01F23B894D400AF9ECF /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		A9A5D02423B8960A00AF9ECF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A9A5D02523B8960A00AF9ECF /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
-		A9A5D02923B8A24200AF9ECF /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		A9A5D02923B8A24200AF9ECF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A9A5D03323B8EF9C00AF9ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A9A5D03723B8F38700AF9ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizable.strings; sourceTree = "<group>"; };
@@ -84,7 +89,7 @@
 		A9A5D03D23B8F88400AF9ECF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		A9A5D04023B8FC0800AF9ECF /* colors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
 		A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIService.swift; sourceTree = "<group>"; };
-		A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		A9A5D04423B91C0400AF9ECF /* AuthAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIService.swift; sourceTree = "<group>"; };
 		A9A5D04623B926F300AF9ECF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
 		A9A5D04B23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIServiceTests.swift; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 		A9D282E523A5577F00CA39DE /* LOFOTunisiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOFOTunisiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282E923A5577F00CA39DE /* LOFOTunisiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTunisiaUITests.swift; sourceTree = "<group>"; };
 		A9D282EB23A5577F00CA39DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E2526D23C11417004AA896 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E8EED58DE990711097EE1BFB /* Pods-LOFOTunisiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +153,24 @@
 				E8EED58DE990711097EE1BFB /* Pods-LOFOTunisiaTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A91DA0D123C08D8C00236786 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */,
+				A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A91DA0D623C0F27600236786 /* CustomsControls */ = {
+			isa = PBXGroup;
+			children = (
+				A91DA0D423C0F20100236786 /* EllipseView.swift */,
+				A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */,
+			);
+			path = CustomsControls;
 			sourceTree = "<group>";
 		};
 		A95FA31523B2A0FC00A2D2FD /* Modules */ = {
@@ -231,8 +255,8 @@
 		A9A5D01C23B8932100AF9ECF /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				A9E7D6FA23BE2585000BAB03 /* SignUpViewController.swift */,
-				A9E7D6FB23BE2585000BAB03 /* SignUpViewController.xib */,
+				A91DA0D123C08D8C00236786 /* Views */,
+				A91DA0D223C08DB700236786 /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -249,8 +273,8 @@
 		A9A5D02123B894FB00AF9ECF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A9A5D02923B8A24200AF9ECF /* CoordinatorProtocol.swift */,
-				A9A5D04423B91C0400AF9ECF /* LoginAPIServiceProtocol.swift */,
+				A9A5D02923B8A24200AF9ECF /* Coordinator.swift */,
+				A9A5D04423B91C0400AF9ECF /* AuthAPIService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -261,6 +285,7 @@
 				A9A5D02B23B8A29600AF9ECF /* AppCoordinator.swift */,
 				A943BE5B23BE788B007721CA /* BaseCoordinator.swift */,
 				A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */,
+				A9E2526D23C11417004AA896 /* SignUpCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -276,7 +301,7 @@
 		A9A5D02E23B8A36D00AF9ECF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */,
+				A91DA0D623C0F27600236786 /* CustomsControls */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -668,21 +693,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */,
+				A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */,
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
 				A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */,
-				A9A5D02A23B8A24200AF9ECF /* CoordinatorProtocol.swift in Sources */,
+				A9A5D02A23B8A24200AF9ECF /* Coordinator.swift in Sources */,
 				A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */,
 				A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */,
 				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
 				A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */,
-				A9A5D04523B91C0400AF9ECF /* LoginAPIServiceProtocol.swift in Sources */,
+				A9A5D04523B91C0400AF9ECF /* AuthAPIService.swift in Sources */,
 				A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */,
 				A9A5D04723B926F300AF9ECF /* User.swift in Sources */,
 				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
 				A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */,
+				A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */,
 				A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */,
 				A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */,
+				A9E2526E23C11417004AA896 /* SignUpCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

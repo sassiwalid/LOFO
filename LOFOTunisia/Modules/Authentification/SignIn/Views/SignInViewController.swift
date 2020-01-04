@@ -27,7 +27,6 @@ class SignInViewController: UIViewController {
         initCallBacks()
         setupColors()
         setupBinding()
-        initGestureRecognizer()
         // Do any additional setup after loading the view.
     }
     // MARK: - Setup Methods
@@ -43,6 +42,11 @@ class SignInViewController: UIViewController {
         .bind { [weak self] in
             self?.viewModel?.submit()
         }.disposed(by: disposeBag)
+        let tapGesture = UITapGestureRecognizer()
+        signUpLabel.addGestureRecognizer(tapGesture)
+        tapGesture.rx.event.bind(onNext: { _ in
+            self.viewModel?.openSignUp()
+        }).disposed(by: disposeBag)
     }
     /// handle Keyboard resign
     func initCallBacks() {
@@ -55,11 +59,7 @@ class SignInViewController: UIViewController {
           print("return pressed")
         }.disposed(by: disposeBag)
     }
-    func initGestureRecognizer() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openSignUpVc))
-        signUpLabel.isUserInteractionEnabled = true
-        signUpLabel.addGestureRecognizer(tapGesture)
-    }
+
     func setupColors() {
         fbButton.backgroundColor = UIColor.fbButtonColor()
         gmailButton.layer.borderColor = UIColor.gmailButtonBorderColor()
@@ -72,8 +72,6 @@ class SignInViewController: UIViewController {
         attributes: [NSAttributedString.Key.foregroundColor: UIColor.passwordTextColor()])
     }
     // MARK: - IBActions
-    @objc func openSignUpVc() {
-    }
 
     @IBAction func signInWithFbButtonClicked(_ sender: Any) {
     }

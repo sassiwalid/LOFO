@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import RxSwift
-class APPCoordinator:BaseCoordinator{
+class AppCoordinator:BaseCoordinator {
     var window : UIWindow?
     init(window:UIWindow) {
         self.window = window
@@ -22,5 +22,15 @@ class APPCoordinator:BaseCoordinator{
         let coordinator = SignInCoordinator()
         coordinator.navigationController = self.navigationController
         self.start(coordinator: coordinator)
+    }
+}
+protocol SignInListener {
+    func didSignIn()
+}
+
+extension AppCoordinator: SignInListener {
+    func didSignIn() {
+        print("Signed In")
+        // TODO: Navigate to Dashboard
     }
 }

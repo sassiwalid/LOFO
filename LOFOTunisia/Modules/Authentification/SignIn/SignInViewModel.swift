@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 class SignInViewModel {
     // MARK: - Variables
-    private let authentification : LoginAPIServiceProtocol?
+    private let authentification : AuthAPIService?
     // Email and Password
     var email =  BehaviorRelay(value: "")
     var password = BehaviorRelay(value: "")
@@ -20,7 +20,8 @@ class SignInViewModel {
     // Events
     var didSignIn = BehaviorRelay(value: false)
     var didFailSignIn = BehaviorRelay(value: false)
-    init (authentification:LoginAPIServiceProtocol) {
+    var shouldOpenSignUP = BehaviorRelay(value: false)
+    init (authentification:AuthAPIService) {
         self.authentification = authentification
     }
     // MARK: - Check Sign In
@@ -34,5 +35,8 @@ class SignInViewModel {
                     self.didFailSignIn.accept(true)
                 }
         })
+    }
+    func openSignUp() {
+        shouldOpenSignUP.accept(true)
     }
 }

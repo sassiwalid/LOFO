@@ -8,19 +8,19 @@
 
 import UIKit
 import Foundation
-class BaseCoordinator: CoordinatorProtocol {
-    var childCoordinators: [CoordinatorProtocol] = []
-    var parentCoordinator: CoordinatorProtocol?
+class BaseCoordinator: Coordinator {
+    var childCoordinators: [Coordinator] = []
+    var parentCoordinator: Coordinator?
     var navigationController = UINavigationController()
     func start() {
         fatalError("Start method must be implemented")
     }
-    func start(coordinator: CoordinatorProtocol) {
+    func start(coordinator: Coordinator) {
         self.childCoordinators.append(coordinator)
         coordinator.parentCoordinator = self
         coordinator.start()
     }
-    func didFinish(coordinator: CoordinatorProtocol) {
+    func didFinish(coordinator: Coordinator) {
         if let index = self.childCoordinators.firstIndex(where: { $0 === coordinator }) {
             self.childCoordinators.remove(at: index)
         }

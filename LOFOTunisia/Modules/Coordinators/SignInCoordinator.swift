@@ -23,10 +23,23 @@ class SignInCoordinator: BaseCoordinator {
             if change == true {
                 self.navigationController.viewControllers = []
                 self.parentCoordinator?.didFinish(coordinator: self)
+                (self.parentCoordinator as? SignInListener)?.didSignIn()
             }
         })
         .disposed(by: self.disposeBag)
+        // Handle open Sign UP Coordinator from the Sign IN Coordinator
+        viewModel.shouldOpenSignUP
+            .bind(onNext: { (open) in
+                if open == true {
+                    self.showSignUp()
+                }
+        }).disposed(by: disposeBag)
         // else it should open the signIn VC
         self.navigationController.pushViewController(signInVC, animated: false)
+    }
+    func showSignUp() {
+        let signUpCoordinator = SignUpCoordinator()
+        signUpCoordinator.navigationController = self.navigationController
+        self.start(coordinator: signUpCoordinator)
     }
 }
