@@ -8,15 +8,14 @@
 
 import Foundation
 
-
-class FakeResponseData{
+class FakeResponseData {
     let responseOk = HTTPURLResponse(url: URL(string: "http://www.google.com")!, statusCode: 200, httpVersion: nil, headerFields: [:])!
     let responseko = HTTPURLResponse(url: URL(string: "http://www.google.com")!, statusCode: 400, httpVersion: nil, headerFields: [:])!
     class AuthenError: Error {
     }
     let error = AuthenError()
     // prepare first the correct user data
-    var userCorrectData : Data{
+    var userCorrectData: Data {
         // get the bundle test
         let bundle = Bundle(for: FakeResponseData.self)
         let url = bundle.url(forResource: "user", withExtension: "json")
