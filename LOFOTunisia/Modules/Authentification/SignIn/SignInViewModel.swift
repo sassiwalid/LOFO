@@ -21,14 +21,13 @@ class SignInViewModel {
     var didSignIn = BehaviorRelay(value: false)
     var didFailSignIn = BehaviorRelay(value: false)
     var shouldOpenSignUP = BehaviorRelay(value: false)
-    init (authentification:AuthAPIService) {
+    init (authentification: AuthAPIService) {
         self.authentification = authentification
     }
     // MARK: - Check Sign In
     /// Check user signIn
     func submit() {
-        authentification?.getUser(login: email.value
-            ,password: password.value,onCompletion: { (success, user) in
+        authentification?.getUser(login: email.value, password: password.value, onCompletion: { (success, user) in
                 if success == true {
                     self.didSignIn.accept(true)
                 } else {

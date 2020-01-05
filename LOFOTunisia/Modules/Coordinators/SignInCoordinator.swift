@@ -40,6 +40,7 @@ class SignInCoordinator: BaseCoordinator {
     func showSignUp() {
         let signUpCoordinator = SignUpCoordinator()
         signUpCoordinator.navigationController = self.navigationController
+        signUpCoordinator.parentCoordinator = self
         self.start(coordinator: signUpCoordinator)
     }
 }

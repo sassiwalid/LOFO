@@ -15,6 +15,18 @@ class SignUpCoordinator:BaseCoordinator {
     private var disposeBag = DisposeBag()
     override func start() {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        // Instanciate the view Model
+        let viewModel = SignUpViewModel(authentification: LoginAPIService(urlSession: URLSession()))
+        signUpVC.viewModel = viewModel
+        // Handle navigation call backs
+        // When user Sign Up succesfully
+        viewModel.didSignUp
+            .bind(onNext: { (change) in
+                if change == true {
+                    self.navigationController.popViewController(animated: true)
+                    self.parentCoordinator?.didFinish(coordinator: self)
+                }
+            }).disposed(by: disposeBag)
         self.navigationController.pushViewController(signUpVC, animated: true)
     }
 }

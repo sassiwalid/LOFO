@@ -24,7 +24,7 @@ class SignInViewController: UIViewController {
     var disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        initCallBacks()
+        resignCallBacks()
         setupColors()
         setupBinding()
         // Do any additional setup after loading the view.
@@ -49,7 +49,7 @@ class SignInViewController: UIViewController {
         }).disposed(by: disposeBag)
     }
     /// handle Keyboard resign
-    func initCallBacks() {
+    func resignCallBacks() {
         emailTextField.rx.controlEvent([.editingDidEndOnExit])
         .subscribe { _ in
           print("return pressed")
@@ -59,7 +59,7 @@ class SignInViewController: UIViewController {
           print("return pressed")
         }.disposed(by: disposeBag)
     }
-
+    /// setup IBOutlets colors
     func setupColors() {
         fbButton.backgroundColor = UIColor.fbButtonColor()
         gmailButton.layer.borderColor = UIColor.gmailButtonBorderColor()
@@ -70,11 +70,5 @@ class SignInViewController: UIViewController {
         attributes: [NSAttributedString.Key.foregroundColor: UIColor.emailTextColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Mot de passe",
         attributes: [NSAttributedString.Key.foregroundColor: UIColor.passwordTextColor()])
-    }
-    // MARK: - IBActions
-
-    @IBAction func signInWithFbButtonClicked(_ sender: Any) {
-    }
-    @IBAction func signInWithGmailButtonClicked(_ sender: Any) {
     }
 }

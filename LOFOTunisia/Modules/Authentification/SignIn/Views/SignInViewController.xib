@@ -55,9 +55,6 @@
                             <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                             <state key="normal" title="Continuer avec Facebook"/>
-                            <connections>
-                                <action selector="signInWithFbButtonClicked:" destination="-1" eventType="touchUpInside" id="60F-Vl-M77"/>
-                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="qaO-8H-gKj">
                             <rect key="frame" x="28.333333333333332" y="22" width="28" height="34"/>
@@ -86,9 +83,6 @@
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="signInWithGmailButtonClicked:" destination="-1" eventType="touchUpInside" id="mSM-hD-jBk"/>
-                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gmail" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-sD-wGz">
                             <rect key="frame" x="28.333333333333332" y="22" width="28" height="34"/>

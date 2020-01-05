@@ -26,4 +26,7 @@ class LoginAPIService:AuthAPIService {
         onCompletion(true, User())
         //
     }
+    func registerUser(user: User, onCompletion: @escaping ((Bool, User?) -> Void)) {
+        onCompletion(true, User())
+    }
 }

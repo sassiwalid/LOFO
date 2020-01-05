@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import RxSwift
-class AppCoordinator:BaseCoordinator {
+class AppCoordinator: BaseCoordinator {
     var window : UIWindow?
     init(window:UIWindow) {
         self.window = window
@@ -21,6 +21,7 @@ class AppCoordinator:BaseCoordinator {
         // start Sign Coordinator
         let coordinator = SignInCoordinator()
         coordinator.navigationController = self.navigationController
+        coordinator.parentCoordinator = self
         self.start(coordinator: coordinator)
     }
 }

@@ -176,6 +176,7 @@
 		A95FA31523B2A0FC00A2D2FD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A96C459D23C20F2400B078F0 /* DashBoard */,
 				A9A5D03F23B8F8A100AF9ECF /* Models */,
 				A9A5D02D23B8A35100AF9ECF /* Managers */,
 				A9A5D02823B8A21400AF9ECF /* Coordinators */,
@@ -193,6 +194,13 @@
 				A9A5D01423B8924900AF9ECF /* Librairies */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A96C459D23C20F2400B078F0 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DashBoard;
 			sourceTree = "<group>";
 		};
 		A9A5D01423B8924900AF9ECF /* Librairies */ = {

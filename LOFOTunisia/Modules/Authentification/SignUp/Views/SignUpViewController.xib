@@ -9,6 +9,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="LOFOTunisia" customModuleProvider="target">
             <connections>
+                <outlet property="ageText" destination="j8W-WQ-ziC" id="GDh-E1-D9I"/>
+                <outlet property="cityText" destination="8EN-c1-FYq" id="kZq-cp-Qqa"/>
+                <outlet property="confPasswordText" destination="1in-84-Kas" id="e3u-Tc-OWp"/>
+                <outlet property="emailText" destination="1fG-7C-tNQ" id="hOS-zz-53n"/>
+                <outlet property="nameText" destination="7vs-1K-ds9" id="afC-og-qum"/>
+                <outlet property="passwordText" destination="jeG-Hr-8Nu" id="x2C-G9-RYi"/>
+                <outlet property="signUpButton" destination="Fi3-oy-ITV" id="h3L-as-AzF"/>
+                <outlet property="subNameText" destination="Ebo-5d-XlU" id="CQ9-tL-e3V"/>
+                <outlet property="userPhoto" destination="BvL-Ch-hRE" id="SZG-kn-Fu8"/>
+                <outlet property="userPhotoLabel" destination="fLc-Me-Obk" id="8Eq-xR-NNn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
