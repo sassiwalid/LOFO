@@ -35,7 +35,7 @@ class SignInCoordinator: BaseCoordinator {
                 }
         }).disposed(by: disposeBag)
         // else it should open the signIn VC
-        self.navigationController.pushViewController(signInVC, animated: false)
+        self.navigationController.pushViewController(signInVC, animated: true)
     }
     func showSignUp() {
         let signUpCoordinator = SignUpCoordinator()

@@ -15,6 +15,6 @@ class SignUpCoordinator:BaseCoordinator {
     private var disposeBag = DisposeBag()
     override func start() {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
-        self.navigationController.pushViewController(signUpVC, animated: false)
+        self.navigationController.pushViewController(signUpVC, animated: true)
     }
 }
