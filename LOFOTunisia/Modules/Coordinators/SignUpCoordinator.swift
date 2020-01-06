@@ -23,8 +23,10 @@ class SignUpCoordinator:BaseCoordinator {
         viewModel.didSignUp
             .bind(onNext: { (change) in
                 if change == true {
-                    self.navigationController.popViewController(animated: true)
-                    self.parentCoordinator?.didFinish(coordinator: self)
+                    DispatchQueue.main.async {
+                        self.navigationController.popViewController(animated: true)
+                        self.parentCoordinator?.didFinish(coordinator: self)
+                    }
                 }
             }).disposed(by: disposeBag)
         self.navigationController.pushViewController(signUpVC, animated: true)

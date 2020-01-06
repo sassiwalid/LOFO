@@ -49,14 +49,19 @@ class LoginAPIService: AuthAPIService {
     let url = URL(string: "\(Constantes.baseURL)\(Constantes.usersRoutes)")
     var request = URLRequest(url: url!)
     request.httpMethod = "POST"
-    request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+    request.setValue("application/json", forHTTPHeaderField: "Accept")
+    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
     //prepare now the body of the request that contain the user data in JSON Format
     let registerUserDic: [String:Any] = ["name":user.name!, "subName":user.subName!, "age":user.age!, "email":user.email!, "password":user.password!, "city":user.city!]
     guard let httpBody = try? JSONSerialization.data(withJSONObject: registerUserDic, options: []) else {
             return
     }
+    // Convert to a string and print
+        if let JSONString = String(data: httpBody, encoding: String.Encoding.utf8) {
+           print(JSONString)
+        }
     request.httpBody = httpBody
-        let _ = urlSession?.dataTask(with: request, completionHandler: { (data, _, error) in
+        let _ = urlSession?.dataTask(with: request, completionHandler: { (data, response , error) in
             if  error != nil {
                 onCompletion(false, nil)
             }
