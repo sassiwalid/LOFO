@@ -16,7 +16,7 @@ class SignUpCoordinator:BaseCoordinator {
     override func start() {
         let signUpVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
         // Instanciate the view Model
-        let viewModel = SignUpViewModel(authentification: LoginAPIService(urlSession: URLSession()))
+        let viewModel = SignUpViewModel(authentification: LoginAPIService(urlSession: URLSession.shared))
         signUpVC.viewModel = viewModel
         // Handle navigation call backs
         // When user Sign Up succesfully

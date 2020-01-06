@@ -8,11 +8,11 @@
 
 import Foundation
 
-class User:NSObject {
-    var name:String?
-    var subName:String?
-    var city:String?
-    var email:String?
-    var password:String?
-    var age:Int?
+class User: Codable {
+    var name: String?
+    var subName: String?
+    var city: String?
+    var email: String?
+    var password: String?
+    var age: Int?
 }

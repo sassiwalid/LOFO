@@ -260,6 +260,7 @@
 		A96C459D23C20F2400B078F0 /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A97E64AB23C31774001ADDC6 /* AddLost */,
 				A9DEA09823C2867300CED91C /* Search */,
 				A9DEA09723C2865F00CED91C /* Notifications */,
 				A9DEA09623C2865600CED91C /* Chat */,
@@ -267,6 +268,13 @@
 				A9DEA09223C2861D00CED91C /* TabBar */,
 			);
 			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		A97E64AB23C31774001ADDC6 /* AddLost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddLost;
 			sourceTree = "<group>";
 		};
 		A9A5D01423B8924900AF9ECF /* Librairies */ = {

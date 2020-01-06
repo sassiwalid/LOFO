@@ -33,7 +33,7 @@ class SignUpViewModel {
         // First encapsulate the attributs in User instance
         createUser()
         authentification?.registerUser(user: self.user.value, onCompletion: { (success, user) in
-            if success {
+            if success && user != nil {
                 self.didSignUp.accept(true)
             }
         })

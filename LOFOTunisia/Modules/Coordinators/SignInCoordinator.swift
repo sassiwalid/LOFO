@@ -15,7 +15,7 @@ class SignInCoordinator: BaseCoordinator {
     private let disposeBag = DisposeBag()
     override func start() {
         let signInVC = SignInViewController(nibName: "SignInViewController", bundle: nil)
-        let viewModel = SignInViewModel(authentification: LoginAPIService(urlSession: URLSession()))
+        let viewModel = SignInViewModel(authentification: LoginAPIService(urlSession: URLSession.shared))
         signInVC.viewModel = viewModel
         // Coordinator subscribes to events and notifies parentCoordinator
         viewModel.didSignIn

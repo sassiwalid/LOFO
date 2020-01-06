@@ -8,11 +8,11 @@
 
 import Foundation
 
-class URLSessionFake:URLSession{
+class URLSessionFake: URLSession {
     let data:Data?
     let urlResponse:URLResponse?
     let error:Error?
-    init(data:Data?,urlResponse:URLResponse?,error:Error?) {
+    init(data:Data?, urlResponse:URLResponse?, error:Error?) {
         self.data = data
         self.urlResponse = urlResponse
         self.error = error
@@ -35,14 +35,13 @@ class URLSessionFake:URLSession{
     }
 }
 
-class URLSessionDataTaskFake:URLSessionDataTask{
-    var completionHandler:((Data?,URLResponse?,Error?)->Void)?
-    var data:Data?
-    var urlResponse:URLResponse?
-    var responseError:Error?
+class URLSessionDataTaskFake:URLSessionDataTask {
+    var completionHandler:((Data?, URLResponse?, Error?) -> Void)?
+    var data: Data?
+    var urlResponse: URLResponse?
+    var responseError: Error?
     override func resume() {
-        completionHandler?(data,urlResponse,responseError)
+        completionHandler?(data, urlResponse, responseError)
     }
     override func cancel() {}
-    
 }
