@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable  class EllipseView: UIView {
+@IBDesignable  class EllipseView: UIImageView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         sharedInit()

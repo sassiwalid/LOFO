@@ -45,6 +45,10 @@ class LoginAPIService: AuthAPIService {
         })
         .resume()
     }
+    /// Add User using Rest API
+    /// - Parameters:
+    ///   - user: User
+    ///   - onCompletion: return success  = true and User data else false and nil
     func registerUser(user: User, onCompletion: @escaping ((Bool, User?) -> Void)) {
     let url = URL(string: "\(Constantes.baseURL)\(Constantes.usersRoutes)")
     var request = URLRequest(url: url!)

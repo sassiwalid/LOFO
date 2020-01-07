@@ -21,6 +21,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var ageText: UITextField!
     @IBOutlet weak var subNameText: UITextField!
     @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var addPhotoView: EllipseView!
     // MARK: - Variables
     var viewModel: SignUpViewModel?
     var disposeBag = DisposeBag()
@@ -86,5 +87,10 @@ class SignUpViewController: UIViewController {
         .subscribe { _ in
                  print("return pressed")
         }.disposed(by: disposeBag)
+        let tapGesture = UITapGestureRecognizer()
+        addPhotoView.addGestureRecognizer(tapGesture)
+        tapGesture.rx.event.bind(onNext: { _ in
+                self.viewModel?.chooseProfilPhoto()
+        }).disposed(by: disposeBag)
     }
 }

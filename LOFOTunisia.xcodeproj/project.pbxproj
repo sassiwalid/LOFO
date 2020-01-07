@@ -11,6 +11,13 @@
 		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
 		A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D223C08DB700236786 /* SignUpViewModel.swift */; };
 		A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D423C0F20100236786 /* EllipseView.swift */; };
+		A93CF28123C51B2600F24FA4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */; };
+		A93CF28223C51B2600F24FA4 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93CF28023C51B2600F24FA4 /* ChatViewController.xib */; };
+		A93CF28423C51B5400F24FA4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF28323C51B5400F24FA4 /* Message.swift */; };
+		A93CF28623C51B6800F24FA4 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF28523C51B6800F24FA4 /* Thing.swift */; };
+		A93CF28823C51B7C00F24FA4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF28723C51B7C00F24FA4 /* Person.swift */; };
+		A93CF28A23C51C8300F24FA4 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF28923C51C8300F24FA4 /* ChatService.swift */; };
+		A93CF28C23C51CDC00F24FA4 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF28B23C51CDC00F24FA4 /* Notification.swift */; };
 		A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943BE5B23BE788B007721CA /* BaseCoordinator.swift */; };
 		A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */; };
 		A95F9A5123C27E9000AA13BA /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A95F9A3F23C27E8E00AA13BA /* Poppins-Regular.otf */; };
@@ -50,6 +57,7 @@
 		A9A5D04F23BB9BAA00AF9ECF /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D04E23BB9BAA00AF9ECF /* FakeResponseData.swift */; };
 		A9A5D05223BB9DCF00AF9ECF /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = A9A5D05123BB9DCF00AF9ECF /* user.json */; };
 		A9A5D05423BBA37F00AF9ECF /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5D05323BBA37F00AF9ECF /* URLSessionFake.swift */; };
+		A9C4142023C3BC9E00B8D8BF /* SignUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4141F23C3BC9E00B8D8BF /* SignUpViewModelTests.swift */; };
 		A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C723A5577B00CA39DE /* AppDelegate.swift */; };
 		A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D282C923A5577B00CA39DE /* SceneDelegate.swift */; };
 		A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D282D023A5577F00CA39DE /* Assets.xcassets */; };
@@ -90,6 +98,13 @@
 		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A91DA0D223C08DB700236786 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A91DA0D423C0F20100236786 /* EllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
+		A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A93CF28023C51B2600F24FA4 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		A93CF28323C51B5400F24FA4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A93CF28523C51B6800F24FA4 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		A93CF28723C51B7C00F24FA4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A93CF28923C51C8300F24FA4 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		A93CF28B23C51CDC00F24FA4 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		A943BE5B23BE788B007721CA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		A95F9A3F23C27E8E00AA13BA /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
@@ -132,6 +147,7 @@
 		A9A5D04E23BB9BAA00AF9ECF /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		A9A5D05123BB9DCF00AF9ECF /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		A9A5D05323BBA37F00AF9ECF /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		A9C4141F23C3BC9E00B8D8BF /* SignUpViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelTests.swift; sourceTree = "<group>"; };
 		A9D282C423A5577B00CA39DE /* LOFOTunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOFOTunisia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D282C723A5577B00CA39DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D282C923A5577B00CA39DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +223,47 @@
 				A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */,
 			);
 			path = CustomsControls;
+			sourceTree = "<group>";
+		};
+		A93CF27E23C51A8900F24FA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */,
+				A93CF28023C51B2600F24FA4 /* ChatViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A93CF28D23C51D0D00F24FA4 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A9D282D023A5577F00CA39DE /* Assets.xcassets */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		A93CF28E23C51DBE00F24FA4 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5D04023B8FC0800AF9ECF /* colors.plist */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		A93CF28F23C51EED00F24FA4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A93CF28923C51C8300F24FA4 /* ChatService.swift */,
+				A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A93CF29023C51F0000F24FA4 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		A95F9A3E23C27E3500AA13BA /* Fonts */ = {
@@ -296,14 +353,14 @@
 		A9A5D01623B8927400AF9ECF /* Commons Files */ = {
 			isa = PBXGroup;
 			children = (
+				A93CF28E23C51DBE00F24FA4 /* Colors */,
+				A93CF28D23C51D0D00F24FA4 /* Media */,
 				A95F9A3E23C27E3500AA13BA /* Fonts */,
 				A9A5D02F23B8EE2F00AF9ECF /* Localizations */,
 				A9D282C923A5577B00CA39DE /* SceneDelegate.swift */,
 				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
 				A9D282D523A5577F00CA39DE /* Info.plist */,
-				A9D282D023A5577F00CA39DE /* Assets.xcassets */,
 				A9A5D01723B892D700AF9ECF /* Constants.swift */,
-				A9A5D04023B8FC0800AF9ECF /* colors.plist */,
 			);
 			path = "Commons Files";
 			sourceTree = "<group>";
@@ -376,7 +433,8 @@
 		A9A5D02D23B8A35100AF9ECF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				A9A5D04223B9189900AF9ECF /* LoginAPIService.swift */,
+				A93CF29023C51F0000F24FA4 /* Cache */,
+				A93CF28F23C51EED00F24FA4 /* Networking */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -401,6 +459,10 @@
 			isa = PBXGroup;
 			children = (
 				A9A5D04623B926F300AF9ECF /* User.swift */,
+				A93CF28323C51B5400F24FA4 /* Message.swift */,
+				A93CF28523C51B6800F24FA4 /* Thing.swift */,
+				A93CF28723C51B7C00F24FA4 /* Person.swift */,
+				A93CF28B23C51CDC00F24FA4 /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -412,6 +474,7 @@
 				A9A5D04D23BB9B9100AF9ECF /* Fakes */,
 				A9A5D04923B928E500AF9ECF /* SignInViewModelTests.swift */,
 				A9A5D04B23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift */,
+				A9C4141F23C3BC9E00B8D8BF /* SignUpViewModelTests.swift */,
 			);
 			path = AuthentificationTests;
 			sourceTree = "<group>";
@@ -517,6 +580,7 @@
 		A9DEA09623C2865600CED91C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				A93CF27E23C51A8900F24FA4 /* Views */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -660,6 +724,7 @@
 				A95F9A5F23C27E9000AA13BA /* Poppins-MediumItalic.otf in Resources */,
 				A95F9A5A23C27E9000AA13BA /* Poppins-SemiBold.otf in Resources */,
 				A95F9A5723C27E9000AA13BA /* Poppins-Black.otf in Resources */,
+				A93CF28223C51B2600F24FA4 /* ChatViewController.xib in Resources */,
 				A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */,
 				A9A5D03623B8F38700AF9ECF /* localizable.strings in Resources */,
 				A9A5D04123B8FC0800AF9ECF /* colors.plist in Resources */,
@@ -849,19 +914,25 @@
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
 				A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */,
+				A93CF28A23C51C8300F24FA4 /* ChatService.swift in Sources */,
 				A9A5D02A23B8A24200AF9ECF /* Coordinator.swift in Sources */,
+				A93CF28423C51B5400F24FA4 /* Message.swift in Sources */,
 				A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */,
 				A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */,
+				A93CF28823C51B7C00F24FA4 /* Person.swift in Sources */,
 				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
 				A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */,
 				A9A5D04523B91C0400AF9ECF /* AuthAPIService.swift in Sources */,
 				A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */,
 				A9A5D04723B926F300AF9ECF /* User.swift in Sources */,
+				A93CF28C23C51CDC00F24FA4 /* Notification.swift in Sources */,
+				A93CF28623C51B6800F24FA4 /* Thing.swift in Sources */,
 				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
 				A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */,
 				A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */,
 				A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */,
 				A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */,
+				A93CF28123C51B2600F24FA4 /* ChatViewController.swift in Sources */,
 				A9E2526E23C11417004AA896 /* SignUpCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,6 +943,7 @@
 			files = (
 				A9A5D04C23BB9B7C00AF9ECF /* LoginAPIServiceTests.swift in Sources */,
 				A9A5D04F23BB9BAA00AF9ECF /* FakeResponseData.swift in Sources */,
+				A9C4142023C3BC9E00B8D8BF /* SignUpViewModelTests.swift in Sources */,
 				A9A5D05423BBA37F00AF9ECF /* URLSessionFake.swift in Sources */,
 				A9A5D04A23B928E500AF9ECF /* SignInViewModelTests.swift in Sources */,
 				A9D282DF23A5577F00CA39DE /* LOFOTunisiaTests.swift in Sources */,

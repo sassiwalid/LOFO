@@ -46,4 +46,9 @@ class SignUpViewModel {
         self.user.value.email = email.value
         self.user.value.password = password.value
     }
+    func validate() -> Bool {
+        return true
+    }
+    func chooseProfilPhoto() {
+    }
 }

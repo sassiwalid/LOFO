@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="LOFOTunisia" customModuleProvider="target">
             <connections>
+                <outlet property="addPhotoView" destination="eB0-aZ-wcg" id="702-18-geP"/>
                 <outlet property="ageText" destination="j8W-WQ-ziC" id="GDh-E1-D9I"/>
                 <outlet property="cityText" destination="8EN-c1-FYq" id="kZq-cp-Qqa"/>
                 <outlet property="confPasswordText" destination="1in-84-Kas" id="e3u-Tc-OWp"/>
