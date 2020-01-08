@@ -266,6 +266,13 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		A93CF29123C5338300F24FA4 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		A95F9A3E23C27E3500AA13BA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +587,7 @@
 		A9DEA09623C2865600CED91C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				A93CF29123C5338300F24FA4 /* CustomCells */,
 				A93CF27E23C51A8900F24FA4 /* Views */,
 			);
 			path = Chat;
