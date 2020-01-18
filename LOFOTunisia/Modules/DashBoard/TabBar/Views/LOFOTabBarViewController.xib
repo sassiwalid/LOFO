@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LOFOTabBarViewController" customModule="LOFOTunisia" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDz-4S-Kdq" userLabel="Tabbar">
+                    <rect key="frame" x="0.0" y="782" width="414" height="110"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="oah-YB-atJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-cY-AKO" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="782"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kdw-cY-AKO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Ih-OA-aCC"/>
+                <constraint firstItem="WDz-4S-Kdq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dkx-NH-2Rb"/>
+                <constraint firstItem="Kdw-cY-AKO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="E4q-si-598"/>
+                <constraint firstItem="WDz-4S-Kdq" firstAttribute="top" secondItem="Kdw-cY-AKO" secondAttribute="bottom" id="E6w-oq-xAw"/>
+                <constraint firstAttribute="bottom" secondItem="WDz-4S-Kdq" secondAttribute="bottom" constant="4" id="E84-g9-V4T"/>
+                <constraint firstItem="WDz-4S-Kdq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="O1N-M5-J3x"/>
+                <constraint firstItem="Kdw-cY-AKO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eWU-yh-fYp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="115.94202898550725" y="91.741071428571431"/>
+        </view>
+    </objects>
+</document>

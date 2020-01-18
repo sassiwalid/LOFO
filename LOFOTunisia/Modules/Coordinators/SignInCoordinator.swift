@@ -19,11 +19,9 @@ class SignInCoordinator: BaseCoordinator {
         signInVC.viewModel = viewModel
         // Coordinator subscribes to events and notifies parentCoordinator
         viewModel.didSignIn
-        .bind(onNext: { (change) in
-            if change == true {
-                self.navigationController.viewControllers = []
-                self.parentCoordinator?.didFinish(coordinator: self)
-                (self.parentCoordinator as? SignInListener)?.didSignIn()
+        .bind(onNext: { (isSigned) in
+            if isSigned == true {
+                self.showDashBoard()
             }
         })
         .disposed(by: self.disposeBag)
@@ -42,5 +40,11 @@ class SignInCoordinator: BaseCoordinator {
         signUpCoordinator.navigationController = self.navigationController
         signUpCoordinator.parentCoordinator = self
         self.start(coordinator: signUpCoordinator)
+    }
+    func showDashBoard() {
+        let dashBoardCoordinator = DashBoardCoordinator()
+        dashBoardCoordinator.navigationController = self.navigationController
+        dashBoardCoordinator.parentCoordinator = self
+        self.start(coordinator: dashBoardCoordinator)
     }
 }

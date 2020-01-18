@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */; };
 		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
+		A908DA2323CB315A0076092D /* LOFOTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908DA2123CB315A0076092D /* LOFOTabBarViewController.swift */; };
+		A908DA2423CB315A0076092D /* LOFOTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A908DA2223CB315A0076092D /* LOFOTabBarViewController.xib */; };
+		A908DA2623CB34290076092D /* DashBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908DA2523CB34290076092D /* DashBoardCoordinator.swift */; };
 		A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D223C08DB700236786 /* SignUpViewModel.swift */; };
 		A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D423C0F20100236786 /* EllipseView.swift */; };
 		A93CF28123C51B2600F24FA4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */; };
@@ -96,6 +99,9 @@
 		40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
 		82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A908DA2123CB315A0076092D /* LOFOTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTabBarViewController.swift; sourceTree = "<group>"; };
+		A908DA2223CB315A0076092D /* LOFOTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LOFOTabBarViewController.xib; sourceTree = "<group>"; };
+		A908DA2523CB34290076092D /* DashBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCoordinator.swift; sourceTree = "<group>"; };
 		A91DA0D223C08DB700236786 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A91DA0D423C0F20100236786 /* EllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
 		A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +213,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A9050ADD23D2F86F004BAD27 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A9D282C923A5577B00CA39DE /* SceneDelegate.swift */,
+				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		A908DA2023CB31160076092D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A908DA2123CB315A0076092D /* LOFOTabBarViewController.swift */,
+				A908DA2223CB315A0076092D /* LOFOTabBarViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A91DA0D123C08D8C00236786 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +339,6 @@
 			isa = PBXGroup;
 			children = (
 				A9A5D01623B8927400AF9ECF /* Commons Files */,
-				A9A5D01523B8925C00AF9ECF /* Utilities */,
 				A9A5D01423B8924900AF9ECF /* Librairies */,
 			);
 			path = Configurations;
@@ -351,8 +374,7 @@
 		A9A5D01523B8925C00AF9ECF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A9A5D02E23B8A36D00AF9ECF /* Helpers */,
-				A9A5D01923B892F000AF9ECF /* Extensions */,
+				A9A5D01723B892D700AF9ECF /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -360,14 +382,13 @@
 		A9A5D01623B8927400AF9ECF /* Commons Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9050ADD23D2F86F004BAD27 /* UIApplication */,
+				A9A5D02E23B8A36D00AF9ECF /* Helpers */,
 				A93CF28E23C51DBE00F24FA4 /* Colors */,
 				A93CF28D23C51D0D00F24FA4 /* Media */,
 				A95F9A3E23C27E3500AA13BA /* Fonts */,
 				A9A5D02F23B8EE2F00AF9ECF /* Localizations */,
-				A9D282C923A5577B00CA39DE /* SceneDelegate.swift */,
-				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
 				A9D282D523A5577F00CA39DE /* Info.plist */,
-				A9A5D01723B892D700AF9ECF /* Constants.swift */,
 			);
 			path = "Commons Files";
 			sourceTree = "<group>";
@@ -433,6 +454,7 @@
 				A943BE5B23BE788B007721CA /* BaseCoordinator.swift */,
 				A943BE5D23BE7EBB007721CA /* SignInCoordinator.swift */,
 				A9E2526D23C11417004AA896 /* SignUpCoordinator.swift */,
+				A908DA2523CB34290076092D /* DashBoardCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -449,6 +471,8 @@
 		A9A5D02E23B8A36D00AF9ECF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5D01523B8925C00AF9ECF /* Utilities */,
+				A9A5D01923B892F000AF9ECF /* Extensions */,
 				A91DA0D623C0F27600236786 /* CustomsControls */,
 			);
 			path = Helpers;
@@ -557,6 +581,7 @@
 		A9DEA09223C2861D00CED91C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				A908DA2023CB31160076092D /* Views */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -751,6 +776,7 @@
 				A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */,
 				A95F9A6123C27E9000AA13BA /* Poppins-Bold.otf in Resources */,
 				A95F9A6223C27E9000AA13BA /* Poppins-ThinItalic.otf in Resources */,
+				A908DA2423CB315A0076092D /* LOFOTabBarViewController.xib in Resources */,
 				A95F9A5423C27E9000AA13BA /* Poppins-ExtraBoldItalic.otf in Resources */,
 				A95F9A5C23C27E9000AA13BA /* Poppins-Light.otf in Resources */,
 				A95F9A5923C27E9000AA13BA /* Poppins-Thin.otf in Resources */,
@@ -923,6 +949,7 @@
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
 				A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */,
 				A93CF28A23C51C8300F24FA4 /* ChatService.swift in Sources */,
+				A908DA2323CB315A0076092D /* LOFOTabBarViewController.swift in Sources */,
 				A9A5D02A23B8A24200AF9ECF /* Coordinator.swift in Sources */,
 				A93CF28423C51B5400F24FA4 /* Message.swift in Sources */,
 				A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */,
@@ -938,6 +965,7 @@
 				A9A5D02023B894D400AF9ECF /* SignInViewModel.swift in Sources */,
 				A9A5D04323B9189900AF9ECF /* LoginAPIService.swift in Sources */,
 				A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */,
+				A908DA2623CB34290076092D /* DashBoardCoordinator.swift in Sources */,
 				A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */,
 				A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */,
 				A93CF28123C51B2600F24FA4 /* ChatViewController.swift in Sources */,
