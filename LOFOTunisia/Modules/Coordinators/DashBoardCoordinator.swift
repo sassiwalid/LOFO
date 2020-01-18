@@ -14,7 +14,5 @@ import RxSwift
 class DashBoardCoordinator: BaseCoordinator {
     private let disposeBag = DisposeBag()
     override func start() {
-       let tabBarVC = LOFOTabBarViewController(nibName: "LOFOTabBarViewController", bundle: nil)
-        self.navigationController.pushViewController(tabBarVC, animated: true)
     }
 }

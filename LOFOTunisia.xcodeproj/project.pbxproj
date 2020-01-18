@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0994C17FAEEE5B11BC705665 /* Pods_LOFOTunisia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238FBD674A841E5BB050106F /* Pods_LOFOTunisia.framework */; };
 		4F7ED228044E586A797FC2EC /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8A866D6E48F21EECA64D8 /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
-		A908DA2323CB315A0076092D /* LOFOTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908DA2123CB315A0076092D /* LOFOTabBarViewController.swift */; };
-		A908DA2423CB315A0076092D /* LOFOTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A908DA2223CB315A0076092D /* LOFOTabBarViewController.xib */; };
+		A9050AE823D384D7004BAD27 /* LOFOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AE623D384D7004BAD27 /* LOFOTabBarController.swift */; };
+		A9050AE923D384D7004BAD27 /* LOFOTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050AE723D384D7004BAD27 /* LOFOTabBarController.xib */; };
+		A9050AEB23D38E7F004BAD27 /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AEA23D38E7F004BAD27 /* TabBarShape.swift */; };
 		A908DA2623CB34290076092D /* DashBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908DA2523CB34290076092D /* DashBoardCoordinator.swift */; };
 		A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D223C08DB700236786 /* SignUpViewModel.swift */; };
 		A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D423C0F20100236786 /* EllipseView.swift */; };
@@ -99,8 +100,9 @@
 		40A45AA547EDE8F3F2F6DB52 /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
 		82260FB207A2398969960536 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AA1D7E1059F8BD7823DB95 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A908DA2123CB315A0076092D /* LOFOTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTabBarViewController.swift; sourceTree = "<group>"; };
-		A908DA2223CB315A0076092D /* LOFOTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LOFOTabBarViewController.xib; sourceTree = "<group>"; };
+		A9050AE623D384D7004BAD27 /* LOFOTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTabBarController.swift; sourceTree = "<group>"; };
+		A9050AE723D384D7004BAD27 /* LOFOTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LOFOTabBarController.xib; sourceTree = "<group>"; };
+		A9050AEA23D38E7F004BAD27 /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		A908DA2523CB34290076092D /* DashBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCoordinator.swift; sourceTree = "<group>"; };
 		A91DA0D223C08DB700236786 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A91DA0D423C0F20100236786 /* EllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
@@ -225,8 +227,8 @@
 		A908DA2023CB31160076092D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A908DA2123CB315A0076092D /* LOFOTabBarViewController.swift */,
-				A908DA2223CB315A0076092D /* LOFOTabBarViewController.xib */,
+				A9050AE623D384D7004BAD27 /* LOFOTabBarController.swift */,
+				A9050AE723D384D7004BAD27 /* LOFOTabBarController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +247,7 @@
 			children = (
 				A91DA0D423C0F20100236786 /* EllipseView.swift */,
 				A9A2F22B23BD1C0A00B5CB44 /* CustomButton.swift */,
+				A9050AEA23D38E7F004BAD27 /* TabBarShape.swift */,
 			);
 			path = CustomsControls;
 			sourceTree = "<group>";
@@ -771,12 +774,12 @@
 				A95F9A5823C27E9000AA13BA /* Poppins-ExtraLight.otf in Resources */,
 				A9E7D6FD23BE2585000BAB03 /* SignUpViewController.xib in Resources */,
 				A95F9A5123C27E9000AA13BA /* Poppins-Regular.otf in Resources */,
+				A9050AE923D384D7004BAD27 /* LOFOTabBarController.xib in Resources */,
 				A95F9A5E23C27E9000AA13BA /* Poppins-BoldItalic.otf in Resources */,
 				A95F9A5D23C27E9000AA13BA /* Poppins-ExtraBold.otf in Resources */,
 				A9D282D123A5577F00CA39DE /* Assets.xcassets in Resources */,
 				A95F9A6123C27E9000AA13BA /* Poppins-Bold.otf in Resources */,
 				A95F9A6223C27E9000AA13BA /* Poppins-ThinItalic.otf in Resources */,
-				A908DA2423CB315A0076092D /* LOFOTabBarViewController.xib in Resources */,
 				A95F9A5423C27E9000AA13BA /* Poppins-ExtraBoldItalic.otf in Resources */,
 				A95F9A5C23C27E9000AA13BA /* Poppins-Light.otf in Resources */,
 				A95F9A5923C27E9000AA13BA /* Poppins-Thin.otf in Resources */,
@@ -944,18 +947,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */,
+				A9050AEB23D38E7F004BAD27 /* TabBarShape.swift in Sources */,
 				A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */,
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
 				A9A5D03E23B8F88400AF9ECF /* UIViewControllerExtension.swift in Sources */,
 				A93CF28A23C51C8300F24FA4 /* ChatService.swift in Sources */,
-				A908DA2323CB315A0076092D /* LOFOTabBarViewController.swift in Sources */,
 				A9A5D02A23B8A24200AF9ECF /* Coordinator.swift in Sources */,
 				A93CF28423C51B5400F24FA4 /* Message.swift in Sources */,
 				A9A5D03C23B8F86A00AF9ECF /* UIColorExtension.swift in Sources */,
 				A9A5D01823B892D700AF9ECF /* Constants.swift in Sources */,
 				A93CF28823C51B7C00F24FA4 /* Person.swift in Sources */,
 				A9A5D02623B8960A00AF9ECF /* SignInViewController.swift in Sources */,
+				A9050AE823D384D7004BAD27 /* LOFOTabBarController.swift in Sources */,
 				A9E7D6FC23BE2585000BAB03 /* SignUpViewController.swift in Sources */,
 				A9A5D04523B91C0400AF9ECF /* AuthAPIService.swift in Sources */,
 				A943BE5C23BE788B007721CA /* BaseCoordinator.swift in Sources */,
