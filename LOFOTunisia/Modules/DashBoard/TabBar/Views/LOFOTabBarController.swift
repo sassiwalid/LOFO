@@ -10,23 +10,19 @@ import UIKit
 
 class LOFOTabBarController: UITabBarController, UITabBarControllerDelegate {
 
-    required init(coder aDecoder: NSCoder) {
-         super.init(coder: aDecoder)!
-     }
-
-     override func viewDidLoad() {
+    override func viewDidLoad() {
          super.viewDidLoad()
+         setupMiddleButton()
          self.delegate = self
     }
     // TabBarButton – Setup Middle Button
     func setupMiddleButton() {
-        let middleBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-25, y: -20, width: 50, height: 50))
+        let addLostBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-25, y: -20, width: 50, height: 50))
         //STYLE THE BUTTON YOUR OWN WAY
-//        middleBtn.setIcon(icon: .fontAwesomeSolid(.home), iconSize: 20.0, color: UIColor.white, backgroundColor: UIColor.white, forState: .normal)
-//        middleBtn.applyGradient(colors: UIColor.primaryColor().cgColor,UIColor.primaryColor().cgColor])
+        addLostBtn.setImage(UIImage(contentsOfFile: "addLostIcon"), for: .normal)
         //add to the tabbar and add click event
-        self.tabBar.addSubview(middleBtn)
-        middleBtn.addTarget(self, action: #selector(self.menuButtonAction), for: .touchUpInside)
+        self.tabBar.addSubview(addLostBtn)
+        addLostBtn.addTarget(self, action: #selector(self.menuButtonAction), for: .touchUpInside)
         self.view.layoutIfNeeded()
     }
 

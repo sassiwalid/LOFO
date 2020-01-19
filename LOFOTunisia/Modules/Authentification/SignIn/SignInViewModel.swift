@@ -28,11 +28,11 @@ class SignInViewModel {
     /// Check user signIn
     func submit() {
         authentification?.getUser(login: email.value, password: password.value, onCompletion: { (success, user) in
-                if success == true {
+//                if success == true {
                     self.didSignIn.accept(true)
-                } else {
-                    self.didFailSignIn.accept(true)
-                }
+//                } else {
+//                    self.didFailSignIn.accept(true)
+//                }
         })
     }
     func openSignUp() {

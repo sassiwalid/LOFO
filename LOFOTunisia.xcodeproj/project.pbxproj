@@ -12,6 +12,16 @@
 		A9050AE823D384D7004BAD27 /* LOFOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AE623D384D7004BAD27 /* LOFOTabBarController.swift */; };
 		A9050AE923D384D7004BAD27 /* LOFOTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050AE723D384D7004BAD27 /* LOFOTabBarController.xib */; };
 		A9050AEB23D38E7F004BAD27 /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AEA23D38E7F004BAD27 /* TabBarShape.swift */; };
+		A9050AEF23D4DF56004BAD27 /* AddLostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AED23D4DF56004BAD27 /* AddLostViewController.swift */; };
+		A9050AF023D4DF56004BAD27 /* AddLostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050AEE23D4DF56004BAD27 /* AddLostViewController.xib */; };
+		A9050AF423D4E00F004BAD27 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AF223D4E00F004BAD27 /* SearchViewController.swift */; };
+		A9050AF523D4E00F004BAD27 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050AF323D4E00F004BAD27 /* SearchViewController.xib */; };
+		A9050AF923D4E033004BAD27 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AF723D4E033004BAD27 /* NotificationsViewController.swift */; };
+		A9050AFA23D4E033004BAD27 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050AF823D4E033004BAD27 /* NotificationsViewController.xib */; };
+		A9050AFF23D4E070004BAD27 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050AFD23D4E070004BAD27 /* HomeListViewController.swift */; };
+		A9050B0023D4E070004BAD27 /* HomeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050AFE23D4E070004BAD27 /* HomeListViewController.xib */; };
+		A9050B0323D4E083004BAD27 /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9050B0123D4E083004BAD27 /* HomeMapViewController.swift */; };
+		A9050B0423D4E083004BAD27 /* HomeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9050B0223D4E083004BAD27 /* HomeMapViewController.xib */; };
 		A908DA2623CB34290076092D /* DashBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908DA2523CB34290076092D /* DashBoardCoordinator.swift */; };
 		A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D223C08DB700236786 /* SignUpViewModel.swift */; };
 		A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91DA0D423C0F20100236786 /* EllipseView.swift */; };
@@ -103,6 +113,16 @@
 		A9050AE623D384D7004BAD27 /* LOFOTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTabBarController.swift; sourceTree = "<group>"; };
 		A9050AE723D384D7004BAD27 /* LOFOTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LOFOTabBarController.xib; sourceTree = "<group>"; };
 		A9050AEA23D38E7F004BAD27 /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
+		A9050AED23D4DF56004BAD27 /* AddLostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLostViewController.swift; sourceTree = "<group>"; };
+		A9050AEE23D4DF56004BAD27 /* AddLostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddLostViewController.xib; sourceTree = "<group>"; };
+		A9050AF223D4E00F004BAD27 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A9050AF323D4E00F004BAD27 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		A9050AF723D4E033004BAD27 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		A9050AF823D4E033004BAD27 /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		A9050AFD23D4E070004BAD27 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		A9050AFE23D4E070004BAD27 /* HomeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListViewController.xib; sourceTree = "<group>"; };
+		A9050B0123D4E083004BAD27 /* HomeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
+		A9050B0223D4E083004BAD27 /* HomeMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMapViewController.xib; sourceTree = "<group>"; };
 		A908DA2523CB34290076092D /* DashBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCoordinator.swift; sourceTree = "<group>"; };
 		A91DA0D223C08DB700236786 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A91DA0D423C0F20100236786 /* EllipseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
@@ -222,6 +242,51 @@
 				A9D282C723A5577B00CA39DE /* AppDelegate.swift */,
 			);
 			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		A9050AEC23D4DF2D004BAD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9050AED23D4DF56004BAD27 /* AddLostViewController.swift */,
+				A9050AEE23D4DF56004BAD27 /* AddLostViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9050AF123D4DFFA004BAD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9050AF223D4E00F004BAD27 /* SearchViewController.swift */,
+				A9050AF323D4E00F004BAD27 /* SearchViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9050AF623D4E017004BAD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9050AF723D4E033004BAD27 /* NotificationsViewController.swift */,
+				A9050AF823D4E033004BAD27 /* NotificationsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9050AFB23D4E047004BAD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9050AFD23D4E070004BAD27 /* HomeListViewController.swift */,
+				A9050AFE23D4E070004BAD27 /* HomeListViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9050AFC23D4E055004BAD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9050B0123D4E083004BAD27 /* HomeMapViewController.swift */,
+				A9050B0223D4E083004BAD27 /* HomeMapViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A908DA2023CB31160076092D /* Views */ = {
@@ -363,6 +428,7 @@
 		A97E64AB23C31774001ADDC6 /* AddLost */ = {
 			isa = PBXGroup;
 			children = (
+				A9050AEC23D4DF2D004BAD27 /* Views */,
 			);
 			path = AddLost;
 			sourceTree = "<group>";
@@ -601,6 +667,7 @@
 		A9DEA09423C2864400CED91C /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				A9050AFC23D4E055004BAD27 /* Views */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -608,6 +675,7 @@
 		A9DEA09523C2864B00CED91C /* List */ = {
 			isa = PBXGroup;
 			children = (
+				A9050AFB23D4E047004BAD27 /* Views */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -624,6 +692,7 @@
 		A9DEA09723C2865F00CED91C /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				A9050AF623D4E017004BAD27 /* Views */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -631,6 +700,7 @@
 		A9DEA09823C2867300CED91C /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A9050AF123D4DFFA004BAD27 /* Views */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -759,11 +829,16 @@
 			files = (
 				A95F9A5F23C27E9000AA13BA /* Poppins-MediumItalic.otf in Resources */,
 				A95F9A5A23C27E9000AA13BA /* Poppins-SemiBold.otf in Resources */,
+				A9050AF023D4DF56004BAD27 /* AddLostViewController.xib in Resources */,
 				A95F9A5723C27E9000AA13BA /* Poppins-Black.otf in Resources */,
 				A93CF28223C51B2600F24FA4 /* ChatViewController.xib in Resources */,
+				A9050B0423D4E083004BAD27 /* HomeMapViewController.xib in Resources */,
 				A9D282D423A5577F00CA39DE /* LaunchScreen.storyboard in Resources */,
+				A9050AF523D4E00F004BAD27 /* SearchViewController.xib in Resources */,
 				A9A5D03623B8F38700AF9ECF /* localizable.strings in Resources */,
 				A9A5D04123B8FC0800AF9ECF /* colors.plist in Resources */,
+				A9050B0023D4E070004BAD27 /* HomeListViewController.xib in Resources */,
+				A9050AFA23D4E033004BAD27 /* NotificationsViewController.xib in Resources */,
 				A95F9A5523C27E9000AA13BA /* Poppins-SemiBoldItalic.otf in Resources */,
 				A95F9A5223C27E9000AA13BA /* Poppins-ExtraLightItalic.otf in Resources */,
 				A95F9A5B23C27E9000AA13BA /* Poppins-BlackItalic.otf in Resources */,
@@ -946,8 +1021,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9050B0323D4E083004BAD27 /* HomeMapViewController.swift in Sources */,
+				A9050AF423D4E00F004BAD27 /* SearchViewController.swift in Sources */,
 				A9A2F22C23BD1C0A00B5CB44 /* CustomButton.swift in Sources */,
 				A9050AEB23D38E7F004BAD27 /* TabBarShape.swift in Sources */,
+				A9050AF923D4E033004BAD27 /* NotificationsViewController.swift in Sources */,
 				A91DA0D323C08DB700236786 /* SignUpViewModel.swift in Sources */,
 				A9D282C823A5577B00CA39DE /* AppDelegate.swift in Sources */,
 				A9D282CA23A5577B00CA39DE /* SceneDelegate.swift in Sources */,
@@ -971,8 +1049,10 @@
 				A91DA0D523C0F20100236786 /* EllipseView.swift in Sources */,
 				A908DA2623CB34290076092D /* DashBoardCoordinator.swift in Sources */,
 				A943BE5E23BE7EBB007721CA /* SignInCoordinator.swift in Sources */,
+				A9050AFF23D4E070004BAD27 /* HomeListViewController.swift in Sources */,
 				A9A5D02C23B8A29600AF9ECF /* AppCoordinator.swift in Sources */,
 				A93CF28123C51B2600F24FA4 /* ChatViewController.swift in Sources */,
+				A9050AEF23D4DF56004BAD27 /* AddLostViewController.swift in Sources */,
 				A9E2526E23C11417004AA896 /* SignUpCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

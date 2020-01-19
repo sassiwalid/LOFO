@@ -9,37 +9,58 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LOFOTabBarController" customModule="LOFOTunisia" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="tTp-li-Qf3" id="3K0-Ic-54u"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-yt-vzh" customClass="LOFOTabBar" customModule="LOFOTunisia" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="836" width="414" height="60"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="eii-nr-HYc"/>
-                    </constraints>
-                    <items>
-                        <tabBarItem title="Home" id="fDx-sG-JU8"/>
-                        <tabBarItem title="Messages" id="7uh-b5-Sfr"/>
-                        <tabBarItem title="Notification" id="YYu-QF-dLR"/>
-                        <tabBarItem title="Search" id="tAf-qi-C5S"/>
-                    </items>
-                    <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </tabBar>
-            </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="WLp-yt-vzh" secondAttribute="bottom" id="5As-Ah-Dmf"/>
-                <constraint firstItem="WLp-yt-vzh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tmn-Uz-LyE"/>
-                <constraint firstItem="WLp-yt-vzh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nGw-fZ-uWw"/>
-            </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="92"/>
-        </view>
+        <tabBarController id="hVg-Cj-3vS" customClass="LOFOTabBarController" customModule="LOFOTunisia" customModuleProvider="target">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g09-mR-LxL" customClass="LOFOTabBar" customModule="LOFOTunisia" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="g36-Bp-AgN">
+                    <view key="view" contentMode="scaleToFill" id="zPv-QJ-cpL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="N8Y-Rx-b50"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="DYj-6c-arE"/>
+                </viewController>
+                <viewController id="uDB-gh-Lvi" userLabel="item 2">
+                    <view key="view" contentMode="scaleToFill" id="qtg-X2-bmt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Rnu-C2-G7A"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="gkE-Ge-97M"/>
+                </viewController>
+                <viewController id="ie3-YZ-q75" userLabel="Item 3">
+                    <view key="view" contentMode="scaleToFill" id="v0W-kb-hte">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OtM-m0-d3G"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="eMU-J2-4BE"/>
+                </viewController>
+                <viewController id="ZXj-Zb-Gwk" userLabel="Item 4">
+                    <view key="view" contentMode="scaleToFill" id="tTp-li-Qf3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oTA-Ng-h77"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="Nmt-eq-bpZ"/>
+                </viewController>
+            </viewControllers>
+            <connections>
+                <outlet property="delegate" destination="-1" id="Req-wx-ENX"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="119"/>
+        </tabBarController>
     </objects>
 </document>
