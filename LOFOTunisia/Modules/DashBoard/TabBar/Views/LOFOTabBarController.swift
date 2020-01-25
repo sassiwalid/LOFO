@@ -8,12 +8,10 @@
 
 import UIKit
 
-class LOFOTabBarController: UITabBarController {
-
+@objc class LOFOTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMiddleButton()
-        // Do any additional setup after loading the view.
     }
     func setupMiddleButton() {
         let addLostBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-25, y: -20, width: 50, height: 50))
