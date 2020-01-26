@@ -20,6 +20,7 @@ class DashBoardCoordinator: BaseCoordinator {
     let notifVC = NotificationsViewController(nibName: "NotificationsViewController", bundle: nil)
     let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
     let tabBarController = LOFOTabBarController(nibName: "LOFOTabBarController", bundle: nil)
+    // associate the viewControllers with the LOFOTabbar
     tabBarController.viewControllers = [mainVC, chatVC, addLostVC, notifVC, searchVC]
     self.navigationController.pushViewController(tabBarController, animated: true)
     }

@@ -26,8 +26,6 @@ class LOFOTabBarController: UIViewController {
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
     }
-    func createCallBacks(){
-    }
     @IBAction func didPressTab(_ sender: UIButton) {
         let previousIndex = selectedIndex
         selectedIndex = sender.tag
@@ -37,11 +35,10 @@ class LOFOTabBarController: UIViewController {
         previousVC.view.removeFromSuperview()
         previousVC.removeFromParent()
         sender.isSelected = true
-        let vc = viewControllers[selectedIndex]
-        addChild(vc)
-        vc.view.frame = contentView.bounds
-        contentView.addSubview(vc.view)
-        vc.didMove(toParent: self)
-        
+        let selectedVC = viewControllers[selectedIndex]
+        addChild(selectedVC)
+        selectedVC.view.frame = contentView.bounds
+        contentView.addSubview(selectedVC.view)
+        selectedVC.didMove(toParent: self)
     }
 }

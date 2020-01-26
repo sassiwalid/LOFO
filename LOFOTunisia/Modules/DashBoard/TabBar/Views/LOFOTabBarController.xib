@@ -34,7 +34,7 @@
                             <rect key="frame" x="-4" y="0.0" width="423" height="49"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1eq-DM-E1k" userLabel="Home">
-                                    <rect key="frame" x="0.0" y="0.0" width="61" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="HomeIconSelected"/>
                                     <connections>
@@ -42,7 +42,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A8W-E7-fcn" userLabel="Chat">
-                                    <rect key="frame" x="66" y="0.0" width="70.333333333333314" height="49"/>
+                                    <rect key="frame" x="70" y="0.0" width="75.333333333333314" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="MessagesIcon"/>
                                     <connections>
@@ -50,7 +50,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P7d-hn-aAR" userLabel="AddLost">
-                                    <rect key="frame" x="141.33333333333334" y="0.0" width="138.00000000000003" height="49"/>
+                                    <rect key="frame" x="150.33333333333331" y="0.0" width="148.33333333333331" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="addLostIcon"/>
                                     <connections>
@@ -58,7 +58,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qkL-21-jwN" userLabel="Notifications">
-                                    <rect key="frame" x="284.33333333333331" y="0.0" width="47.666666666666686" height="49"/>
+                                    <rect key="frame" x="303.66666666666669" y="0.0" width="51.333333333333314" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="NotificationsIcon"/>
                                     <connections>
@@ -66,7 +66,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nPW-BY-j2z" userLabel="Search">
-                                    <rect key="frame" x="337" y="0.0" width="86" height="49"/>
+                                    <rect key="frame" x="360" y="0.0" width="63" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="SearchIcon"/>
                                     <connections>
