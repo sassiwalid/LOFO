@@ -24,7 +24,6 @@ class LOFOTabBar: UIView {
         shapeLayer.shadowRadius = 10
         shapeLayer.shadowColor = UIColor.gray.cgColor
         shapeLayer.shadowOpacity = 0.3
-
         if let oldShapeLayer = self.shapeLayer {
             self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
         } else {
