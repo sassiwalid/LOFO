@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mWZ-pS-lfJ">
-                    <rect key="frame" x="14" y="50" width="158" height="18"/>
+                    <rect key="frame" x="14" y="32" width="158" height="18"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kRf-hu-hI1">
                             <rect key="frame" x="0.0" y="0.0" width="138" height="18"/>
@@ -53,7 +53,7 @@
                     </constraints>
                 </stackView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F8b-6o-xyJ">
-                    <rect key="frame" x="0.0" y="78" width="375" height="589"/>
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
@@ -65,7 +65,7 @@
                 <constraint firstItem="F8b-6o-xyJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RZK-x0-kBO"/>
                 <constraint firstItem="mWZ-pS-lfJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="Wun-nj-M8S"/>
                 <constraint firstAttribute="bottom" secondItem="F8b-6o-xyJ" secondAttribute="bottom" id="Zus-Wa-mAf"/>
-                <constraint firstItem="mWZ-pS-lfJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="iDB-CK-fTD"/>
+                <constraint firstItem="mWZ-pS-lfJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="iDB-CK-fTD"/>
                 <constraint firstAttribute="bottom" secondItem="F8b-6o-xyJ" secondAttribute="bottom" id="nx0-Cz-6cD"/>
                 <constraint firstItem="F8b-6o-xyJ" firstAttribute="top" secondItem="mWZ-pS-lfJ" secondAttribute="bottom" constant="10" id="pSf-nT-cD1"/>
             </constraints>

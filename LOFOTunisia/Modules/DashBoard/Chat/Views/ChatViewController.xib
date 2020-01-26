@@ -16,9 +16,56 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j6f-Q3-TBK">
+                    <rect key="frame" x="20" y="76" width="117" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwi-EW-EFb">
+                            <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Chat">
+                                    <attributes>
+                                        <font key="NSFont" size="36" name="Poppins-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8w-P5-7x6" customClass="EllipseView" customModule="LOFOTunisia" customModuleProvider="target">
+                            <rect key="frame" x="99" y="6" width="18" height="18"/>
+                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="Nsc-5Y-qvf"/>
+                                <constraint firstAttribute="height" constant="18" id="b4g-xw-5Le"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CbO-Nv-i35"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bda-rF-93h">
+                    <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bda-rF-93h" secondAttribute="bottom" id="LOd-0e-5Ks"/>
+                <constraint firstItem="j6f-Q3-TBK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="Lav-KE-JTV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bda-rF-93h" secondAttribute="trailing" id="U42-Rt-Rg8"/>
+                <constraint firstItem="bda-rF-93h" firstAttribute="top" secondItem="j6f-Q3-TBK" secondAttribute="bottom" constant="34" id="Vw5-FV-pj0"/>
+                <constraint firstItem="bda-rF-93h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f2Q-sk-ebH"/>
+                <constraint firstItem="j6f-Q3-TBK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="goA-IG-o7Z"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="87"/>
+            <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
         </view>
     </objects>
 </document>
