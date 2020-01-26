@@ -36,6 +36,10 @@ extension UIColor {
     static func passwordTextColor() -> UIColor {
         return getColor("password")
     }
+    static func tabBarColor() -> UIColor {
+        return getColor("tabBarColor")
+    }
+    
     static func colorWithHexString(hexString: String, alpha:CGFloat = 1.0) -> UIColor {
         // Convert hex string to an integer
         let hexint = Int(self.intFromHexString(hexStr: hexString))

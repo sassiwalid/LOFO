@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 class LOFOTabBarController: UIViewController {
     // MARK: - IBOutlets
+    @IBOutlet weak var tabBarView: LOFOTabBar!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons : [UIButton]!
     // MARK: - Global Variables
@@ -23,6 +24,7 @@ class LOFOTabBarController: UIViewController {
     var selectedIndex: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupColor()
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
     }
@@ -40,5 +42,12 @@ class LOFOTabBarController: UIViewController {
         selectedVC.view.frame = contentView.bounds
         contentView.addSubview(selectedVC.view)
         selectedVC.didMove(toParent: self)
+    }
+    func setupColor() {
+        tabBarView.backgroundColor = UIColor.tabBarColor()
+        buttons[2].imageView?.layer.cornerRadius = buttons[2].frame.height * 0.50
+        buttons[2].imageView?.layer.borderWidth = 10
+        buttons[2].imageView?.layer.borderColor = UIColor.primaryColor().cgColor
+        tabBarView.alpha = 0.9
     }
 }

@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LOFOTabBarController" customModule="LOFOTunisia" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="9Mf-yZ-DhA" id="Pqx-pD-oI5"/>
+                <outlet property="tabBarView" destination="eAi-tb-Nf5" id="5MH-1a-jsP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="buttons" destination="1eq-DM-E1k" collectionClass="NSMutableArray" id="BVQ-kq-eRu"/>
                 <outletCollection property="buttons" destination="A8W-E7-fcn" collectionClass="NSMutableArray" id="SXb-jg-NvR"/>
@@ -30,21 +31,23 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAi-tb-Nf5" userLabel="TabBar" customClass="LOFOTabBar" customModule="LOFOTunisia" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="792" width="414" height="70"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-83-ZZ3">
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-83-ZZ3">
                             <rect key="frame" x="-4" y="0.0" width="423" height="49"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1eq-DM-E1k" userLabel="Home">
-                                    <rect key="frame" x="0.0" y="0.0" width="65" height="49"/>
+                                    <rect key="frame" x="0.0" y="6.6666666666666679" width="65" height="36"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="HomeIconSelected"/>
+                                    <state key="normal" image="HomeIcon"/>
+                                    <state key="selected" image="HomeIconSelected"/>
                                     <connections>
                                         <action selector="didPressTab:" destination="-1" eventType="touchUpInside" id="tQS-pD-PKp"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A8W-E7-fcn" userLabel="Chat">
-                                    <rect key="frame" x="70" y="0.0" width="75.333333333333314" height="49"/>
+                                    <rect key="frame" x="70" y="6" width="75.333333333333314" height="37"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="MessagesIcon"/>
+                                    <state key="selected" image="MessagesIconSelected"/>
                                     <connections>
                                         <action selector="didPressTab:" destination="-1" eventType="touchUpInside" id="hEG-BD-SaM"/>
                                     </connections>
@@ -53,22 +56,28 @@
                                     <rect key="frame" x="150.33333333333331" y="0.0" width="148.33333333333331" height="49"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="addLostIcon"/>
+                                    <state key="selected" image="addLostIcon"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="didPressTab:" destination="-1" eventType="touchUpInside" id="PDj-Yd-WrZ"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qkL-21-jwN" userLabel="Notifications">
-                                    <rect key="frame" x="303.66666666666669" y="0.0" width="51.333333333333314" height="49"/>
+                                    <rect key="frame" x="303.66666666666669" y="6.6666666666666679" width="51.333333333333314" height="36"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="NotificationsIcon"/>
+                                    <state key="selected" image="NotificationsIconSelected"/>
                                     <connections>
                                         <action selector="didPressTab:" destination="-1" eventType="touchUpInside" id="R1g-hi-7uh"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nPW-BY-j2z" userLabel="Search">
-                                    <rect key="frame" x="360" y="0.0" width="63" height="49"/>
+                                    <rect key="frame" x="360" y="7" width="63" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="SearchIcon"/>
+                                    <state key="selected" image="SearchIconSelected"/>
                                     <connections>
                                         <action selector="didPressTab:" destination="-1" eventType="touchUpInside" id="P1w-CU-lmD"/>
                                     </connections>
@@ -101,10 +110,14 @@
         </view>
     </objects>
     <resources>
+        <image name="HomeIcon" width="21.666666030883789" height="18.333333969116211"/>
         <image name="HomeIconSelected" width="21.666666030883789" height="18.333333969116211"/>
         <image name="MessagesIcon" width="25" height="18.666666030883789"/>
+        <image name="MessagesIconSelected" width="25" height="18.666666030883789"/>
         <image name="NotificationsIcon" width="17" height="18"/>
+        <image name="NotificationsIconSelected" width="17" height="18"/>
         <image name="SearchIcon" width="17.666666030883789" height="17.666666030883789"/>
+        <image name="SearchIconSelected" width="17.666666030883789" height="17.666666030883789"/>
         <image name="addLostIcon" width="49" height="49"/>
     </resources>
 </document>
