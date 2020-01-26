@@ -2,29 +2,43 @@
 //  LOFOTabBarController.swift
 //  LOFOTunisia
 //
-//  Created by walid sassi on 1/24/20.
+//  Created by walid sassi on 1/26/20.
 //  Copyright © 2020 walid sassi. All rights reserved.
 //
 
 import UIKit
-
-@objc class LOFOTabBarController: UITabBarController {
+import RxCocoa
+import RxSwift
+class LOFOTabBarController: UIViewController {
+    // MARK: - IBOutlets
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet var buttons : [UIButton]!
+    // MARK: - Global Variables
+    var homeViewController: HomeListViewController!
+    var searchViewController: SearchViewController!
+    var chatViewController: ChatViewController!
+    var notificationsViewController: NotificationsViewController!
+    var addLostViewController: AddLostViewController!
+    var viewControllers: [UIViewController]!
+    var selectedIndex: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupMiddleButton()
+        buttons[selectedIndex].isSelected = true
+        didPressTab(buttons[selectedIndex])
     }
-    func setupMiddleButton() {
-        let addLostBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-25, y: -20, width: 50, height: 50))
-        //STYLE THE BUTTON YOUR OWN WAY
-        addLostBtn.setBackgroundImage(UIImage(named: "addLostIcon"), for: .normal)
-        //add to the tabbar and add click event
-        self.tabBar.addSubview(addLostBtn)
-        addLostBtn.addTarget(self, action: #selector(self.menuButtonAction), for: .touchUpInside)
-        self.view.layoutIfNeeded()
-    }
-
-    // Menu Button Touch Action
-    @objc func menuButtonAction(sender: UIButton) {
-        self.selectedIndex = 2   //to select the middle tab. use "1" if you have only 3 tabs.
+    @IBAction func didPressTab(_ sender: UIButton) {
+        let previousIndex = selectedIndex
+        selectedIndex = sender.tag
+        buttons[previousIndex].isSelected = false
+        let previousVC = viewControllers[previousIndex]
+        previousVC.willMove(toParent: nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParent()
+        sender.isSelected = true
+        let selectedVC = viewControllers[selectedIndex]
+        addChild(selectedVC)
+        selectedVC.view.frame = contentView.bounds
+        contentView.addSubview(selectedVC.view)
+        selectedVC.didMove(toParent: self)
     }
 }

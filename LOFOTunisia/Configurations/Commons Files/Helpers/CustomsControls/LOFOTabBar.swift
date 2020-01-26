@@ -8,34 +8,22 @@
 
 import UIKit
 @IBDesignable
-class LOFOTabBar: UITabBar {
+class LOFOTabBar: UIView {
     private var shapeLayer: CALayer?
-    override var frame: CGRect {
-        get {
-            return super.frame
-        }
-        set {
-            var tmp = newValue
-            if let superview = superview, tmp.maxY !=
-                superview.frame.height {
-                tmp.origin.y = superview.frame.height - tmp.height
-            }
-
-            super.frame = tmp
-        }
+    override func draw(_ rect: CGRect) {
+        addShape()
     }
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
-        shapeLayer.strokeColor = UIColor.lightGray.cgColor
+        shapeLayer.strokeColor = UIColor.white.cgColor
         shapeLayer.fillColor = UIColor.white.cgColor
-        shapeLayer.lineWidth = 1.0
+        shapeLayer.lineWidth = 2.0
         //The below 4 lines are for shadow above the bar. you can skip them if you do not want a shadow
         shapeLayer.shadowOffset = CGSize(width: 0, height: 0)
         shapeLayer.shadowRadius = 10
         shapeLayer.shadowColor = UIColor.gray.cgColor
         shapeLayer.shadowOpacity = 0.3
-
         if let oldShapeLayer = self.shapeLayer {
             self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
         } else {
@@ -43,11 +31,8 @@ class LOFOTabBar: UITabBar {
         }
         self.shapeLayer = shapeLayer
     }
-    override func draw(_ rect: CGRect) {
-        self.addShape()
-    }
     func createPath() -> CGPath {
-        let height: CGFloat = 30.0
+        let height: CGFloat = 20.0
         let path = UIBezierPath()
         let centerWidth = self.frame.width / 2
         path.move(to: CGPoint(x: 0, y: 0)) // start top left
@@ -66,13 +51,4 @@ class LOFOTabBar: UITabBar {
 
         return path.cgPath
     }
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-           guard !clipsToBounds && !isHidden && alpha > 0 else { return nil }
-           for member in subviews.reversed() {
-               let subPoint = member.convert(point, from: self)
-               guard let result = member.hitTest(subPoint, with: event) else { continue }
-               return result
-           }
-           return nil
-       }
 }
