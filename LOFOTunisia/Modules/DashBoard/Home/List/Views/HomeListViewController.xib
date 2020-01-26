@@ -19,12 +19,15 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kRf-hu-hI1">
                     <rect key="frame" x="34" y="89" width="138" height="51"/>
+
+
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <attributedString key="attributedText">
                         <fragment content="Accueil">
                             <attributes>
                                 <font key="NSFont" size="36" name="Poppins-Bold"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+
                             </attributes>
                         </fragment>
                     </attributedString>
@@ -35,10 +38,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
-            </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
-        </view>
+
+
     </objects>
 </document>

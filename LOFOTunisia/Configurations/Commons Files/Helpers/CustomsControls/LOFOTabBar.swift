@@ -10,6 +10,20 @@ import UIKit
 @IBDesignable
 class LOFOTabBar: UITabBar {
     private var shapeLayer: CALayer?
+    override var frame: CGRect {
+        get {
+            return super.frame
+        }
+        set {
+            var tmp = newValue
+            if let superview = superview, tmp.maxY !=
+                superview.frame.height {
+                tmp.origin.y = superview.frame.height - tmp.height
+            }
+
+            super.frame = tmp
+        }
+    }
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
