@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="yHM-FU-38b">
-                    <rect key="frame" x="20" y="30" width="265" height="50.5"/>
+                    <rect key="frame" x="20" y="32" width="265" height="50.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgP-WW-lTd">
                             <rect key="frame" x="0.0" y="0.0" width="238" height="50.5"/>
@@ -58,7 +58,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="yHM-FU-38b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="3jc-hY-jWA"/>
+                <constraint firstItem="yHM-FU-38b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="3jc-hY-jWA"/>
                 <constraint firstItem="yHM-FU-38b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5md-6Y-Ora"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
