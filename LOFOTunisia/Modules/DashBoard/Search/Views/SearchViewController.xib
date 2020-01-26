@@ -18,14 +18,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q37-iN-ok9">
-                    <rect key="frame" x="20" y="76" width="223.5" height="50.5"/>
+                    <rect key="frame" x="20" y="76" width="202" height="45"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTz-PA-jqm">
-                            <rect key="frame" x="0.0" y="0.0" width="197.5" height="50.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="176" height="45"/>
                             <attributedString key="attributedText">
                                 <fragment content="Recherche">
                                     <attributes>
-                                        <font key="NSFont" size="36" name="Poppins-Bold"/>
+                                        <font key="NSFont" size="32" name="Poppins-Bold"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
@@ -33,7 +33,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-qt-ha6" customClass="EllipseView" customModule="LOFOTunisia" customModuleProvider="target">
-                            <rect key="frame" x="205.5" y="16.5" width="18" height="18"/>
+                            <rect key="frame" x="184" y="13.5" width="18" height="18"/>
                             <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="18" id="57H-Wu-75Y"/>
