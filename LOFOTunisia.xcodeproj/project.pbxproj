@@ -327,13 +327,12 @@
 			path = CustomsControls;
 			sourceTree = "<group>";
 		};
-		A93CF27E23C51A8900F24FA4 /* Views */ = {
+		A93CF27E23C51A8900F24FA4 /* ListChat */ = {
 			isa = PBXGroup;
 			children = (
-				A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */,
-				A93CF28023C51B2600F24FA4 /* ChatViewController.xib */,
+				A963C57523DE302400B88B16 /* Views */,
 			);
-			path = Views;
+			path = ListChat;
 			sourceTree = "<group>";
 		};
 		A93CF28D23C51D0D00F24FA4 /* Media */ = {
@@ -366,13 +365,6 @@
 			children = (
 			);
 			path = Cache;
-			sourceTree = "<group>";
-		};
-		A93CF29123C5338300F24FA4 /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		A95F9A3E23C27E3500AA13BA /* Fonts */ = {
@@ -422,9 +414,41 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		A963C57223DE2F9F00B88B16 /* MyLostedElements */ = {
+			isa = PBXGroup;
+			children = (
+				A963C57323DE2FC000B88B16 /* Views */,
+			);
+			path = MyLostedElements;
+			sourceTree = "<group>";
+		};
+		A963C57323DE2FC000B88B16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A963C57423DE2FD400B88B16 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		A963C57523DE302400B88B16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A93CF27F23C51B2600F24FA4 /* ChatViewController.swift */,
+				A93CF28023C51B2600F24FA4 /* ChatViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A96C459D23C20F2400B078F0 /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A963C57223DE2F9F00B88B16 /* MyLostedElements */,
 				A97E64AB23C31774001ADDC6 /* AddLost */,
 				A9DEA09823C2867300CED91C /* Search */,
 				A9DEA09723C2865F00CED91C /* Notifications */,
@@ -693,8 +717,8 @@
 		A9DEA09623C2865600CED91C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				A93CF29123C5338300F24FA4 /* CustomCells */,
-				A93CF27E23C51A8900F24FA4 /* Views */,
+				A963C57423DE2FD400B88B16 /* ChatRoom */,
+				A93CF27E23C51A8900F24FA4 /* ListChat */,
 			);
 			path = Chat;
 			sourceTree = "<group>";

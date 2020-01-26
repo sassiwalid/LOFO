@@ -20,13 +20,13 @@
                     <rect key="frame" x="14" y="32" width="158" height="18"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kRf-hu-hI1">
-                            <rect key="frame" x="0.0" y="0.0" width="138" height="18"/>
+                            <rect key="frame" x="0.0" y="0.0" width="122.5" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <attributedString key="attributedText">
                                 <fragment content="Accueil">
                                     <attributes>
-                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <font key="NSFont" size="36" name="Poppins-Bold"/>
+                                        <color key="NSColor" red="0.014177506345177671" green="0.014177506345177671" blue="0.014177506345177671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="32" name="Poppins-Bold"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
